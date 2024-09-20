@@ -1,0 +1,206 @@
+/*  */
+body{
+    padding: 0;
+    margin: 0;
+    color: #000;
+}
+/* navbar styles */
+nav{
+    background: var(--Brand-Purple, #7D61F2);
+    display: flex;   
+    height: 76px;
+    padding: 8px 40px;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+nav ul li{
+    color: var(--Brand-Black, #000);
+    text-align: center;
+    font-family: Nunito;
+    font-size: 16px;
+    font-style: normal;
+    list-style: none;
+    font-weight: 400;
+    line-height: 22px; 
+}
+nav ul li:hover{
+  text-decoration: underline;
+}
+nav ul li a{
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.navbar-btn-container{
+    display: flex;
+    gap: 10px;    
+    padding: 8px 40px;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+} 
+.free-trial-btn{
+    display: flex;
+    width: 120px;
+    height: 46px;
+    padding: 8px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border:none;
+    border-radius: 8px;
+    background: var(--White-Main, #FFF);
+}
+.login-btn{
+    display: flex;
+    width: 120px;
+    height: 46px;
+    padding: 8px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border:none;
+    border-radius: 8px ;
+    background: var(--Brand-Lemon, #D0EF4C);
+}
+/* hero content */
+.hero-content{
+    display: inline-flex;
+    position: relative;
+    color: #FFF;
+    padding-left:40px ;
+    background: url(./public/images/background-image.png);
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    gap: 40px;
+}
+.hero-content h1{
+    color: var(--White, #FFF);
+    font-family: Nunito;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    align-self: stretch;
+}
+.hero-content p{
+    color: var(--White, #FFF);
+    font-family: Nunito;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    align-self: stretch;
+}
+.free--btn{
+    display: flex;
+    width: 250px;
+    height: 55px;
+    padding: 8px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    border: none;
+    background: var(--Brand-Lemon, #D0EF4C);
+}
+.hero-content-img{
+    display: flex;
+    gap: 0px;    
+}
+.hero-content-img img{
+    border: none;
+    padding: 0px;margin: 0;
+}
+.hero-active-user{
+    display: flex;
+    width: 160px;
+    padding:8px 2px 2px 10px;
+    gap: 0;
+    text-align: ce;
+    /* justify-content: space-between; */
+    align-items: flex-start;
+    flex-direction: column;
+    bottom: 20%;
+    position: absolute;
+    border-radius: 12.2px;
+    background: var(--Brand-Purple, #7D61F2);
+}
+.hero-active-user p{
+    color: var(--Brand-Lemon, #D0EF4C);
+    font-family: Nunito;
+    display: flex;
+    flex-direction: column;
+    font-size: 24.4px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    align-self: stretch;
+}
+.hero-active-user span{
+    color: var(--Brand-Black, #000);
+    font-family: Nunito;
+    font-size: 18.3px;
+    font-style: normal;
+    width: auto;
+    font-weight: 500;
+    line-height: normal;
+    align-self: stretch;
+}
+.hero-contribution{
+    display: flex;
+    width: 200px;
+    padding:7px 5px 5px 20px;
+    top: 47%;
+    flex-direction: column;
+    justify-content: space-between;
+    right: -9px;    
+    border-radius: 13.022px;
+    position: absolute;
+    background: var(--Brand-Lemon, #D0EF4C);
+}
+.hero-contribution p{
+    color: var(--Brand-Purple, #7D61F2);
+    font-family: Nunito;
+    display: flex;
+    flex-direction: column;
+    font-size: 26.044px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.hero-contribution span{
+    color: var(--Brand-Black, #000);
+    font-family: Nunito;
+    font-size: 19.533px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    align-self: stretch;
+}
+.calandar button{
+    display: flex;   
+    border: none;    
+    padding: 2px 8px;
+    justify-content: center;
+    align-items: center;
+    gap: 6.511px;    
+    border-radius: 6.511px;
+    background: #FFF;
+}
+.calandar button p{
+    color: var(--Black-500, #1C1C1C);
+    font-family: Nunito;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal; 
+}
