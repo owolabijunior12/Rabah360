@@ -1061,6 +1061,18 @@ line-height: normal;
 .seventh-grouped-div{
     display: flex;
     gap: 16px;
+    justify-content: center;
+}
+.nav-btn{
+    display: none;
+    
+}
+.comment-wrapper{
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    gap: 8px;
+    align-items: center;
 }
 .seventh-grouped-div .comment-container{
     display: flex;    
@@ -1445,7 +1457,6 @@ background: var(--Brand-Lemon, #D0EF4C);
     }
     
 }
-
 
 
   @media (min-width: 576px) and (max-width: 818px) {
