@@ -705,3 +705,92 @@ nav ul li a{
     line-height: 20px; /* 142.857% */
     text-decoration-line: underline;
 }
+.forth-grouped-div{
+    background: #F4F4F4;
+    display: flex;
+    padding: 80px 100px;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    align-self: stretch;
+}
+.forth-grouped-div .for-you{
+    border-radius: 40px;
+    border: 2px solid var(--Brand-Black, #000);
+    background: var(--Brand-Lemon, #D0EF4C);
+    display: flex;
+    padding: 8px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+.forth-grouped-div .for-you p{
+    color: var(--Brand-Black, #000);
+    font-family: Nunito;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+.forth-grouped-div p{
+    color: var(--Brand-Black, #000);
+    text-align: center;
+    font-family: Nunito;
+    font-size: 33px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;  
+    align-self: stretch;
+}
+.forth-grouped-div .img{
+    width: 760px;
+    height: 450px;
+    flex-shrink: 0;
+    background: url(./public/images/Rectangle\ 2.png);
+}
+.forth-grouped-div .free-trial-btn{
+    display: flex;
+    width: 250px;
+    height: 55px;
+    padding: 8px 16px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background: var(--Brand-Lemon, #D0EF4C);
+    gap: 10px;
+}
+.forth-grouped-div .free-trial-btn p{
+    color: var(--Brand-Black, #000);
+    font-family: Nunito;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.ortalk{
+    color: var(--Brand-Black, #000);
+    font-family: Nunito;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration-line: underline;
+    text-transform: uppercase;
+    color: var(--Brand-Black, #000);
+    font-family: Nunito;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+.fifth-groupd-div{
+    background: #FFF;
+    display: flex;
+    padding: 80px 100px;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    align-self: stretch;
+}
