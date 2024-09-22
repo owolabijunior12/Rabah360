@@ -3,6 +3,17 @@
     nav ul{
         display: none;
     }
+    .container{
+        width: 90vw;
+        padding: 10px;
+    }
+    .cs-div{
+        padding: 5px;
+        gap: 20px;
+    }
+    .cs-div form{
+        padding: 10px;
+    }
     .navbar-btn-container{
         display: none;
     }
@@ -21,6 +32,27 @@
     }
     .grps-div .rec-3{
         width: 100%;
+    }
+    .first-div-contact{
+        padding: 5px;
+    }
+    .input button{
+        width: auto;
+        /* align-items: flex-start; */
+    }
+    .help-container div{
+        padding: 10px;
+        gap: 3px;
+        justify-content: center;
+    }
+    .help-container div svg{
+        width: auto;
+        height: auto;  
+    }
+    .help{
+        padding: 40px 40px;
+        justify-content: flex-start;
+        align-items: flex-start;
     }
     .first-grouped-div{
         display: flex;
@@ -186,6 +218,30 @@
         flex-wrap: wrap;
         padding: 10px;
     }
+    .first-div-contact{
+        padding: 5px;
+    }
+    .input button{
+        width: 30%;
+        /* align-items: flex-start; */
+    }
+    .input input{
+        width: 70%;
+    }
+    .help-container div{
+        padding: 10px;
+        gap: 3px;
+        justify-content: center;
+    }
+    .help-container div svg{
+        width: auto;
+        height: auto;  
+    }
+    .help{
+        padding: 40px 40px;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
     
 }
 
@@ -194,6 +250,34 @@
     .first-container{
         /* padding: 10px 10px 10px 10px; */
         width: 100vw;
+    }
+    .cs-div{
+        padding: 5px;
+        gap: 20px;
+    }
+    .cs-div form{
+        padding: 10px;
+    }
+    .first-div-contact{
+        padding: 5px;
+    }
+    .input button{
+        width: auto;
+        /* align-items: flex-start; */
+    }
+    .help-container div{
+        padding: 10px;
+        gap: 3px;
+        justify-content: center;
+    }
+    .help-container div svg{
+        width: auto;
+        height: auto;  
+    }
+    .help{
+        padding: 40px 40px;
+        justify-content: flex-start;
+        align-items: flex-start;
     }
     .our-mission-value{
         flex-wrap: wrap;
