@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>login || Rabah360</title>
 </head>
-<body>
+<body id="dark-theme">
     <div class="container">
         <div>        
             <svg width="160" height="50" viewBox="0 0 160 50" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -20,22 +20,24 @@
                 </defs>
                 </svg>                
         </div>
-        <form action="" method="post">
+        <form id="loginForm" action="" >
             <h1>Login</h1>
             <p>New user? <a href="/register.html"><span>Create account</span></a> </p>
             <div class="form-container">
                 <div class="form-container">
                     <label for="email">Email</label>
-                    <input type="email" name="email" placeholder="Email" id="">
+                    <input type="email" name="email" placeholder="Email" required>
                 </div>
                 <div class="form-container">
                     <label for="password">Password</label>
-                    <input type="password" name="password" placeholder="Password" id="">
+                    <input type="password" name="password" placeholder="Password" required>
                 </div>
                 <a href="./forgetpassword.html" class="fg">Forgot password?</a>
-                <input type="submit" value="    Send Message" id="submit-btn">
+                <input type="submit" value="Send Message" id="submit-btn">
             </div>
+            <div class="loader" id="loader"></div>
         </form>
     </div>
+    <script src="./index.js"></script>
 </body>
 </html>

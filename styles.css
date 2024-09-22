@@ -1191,6 +1191,9 @@ line-height: 22px;
     font-weight: 900;
     line-height: 22px; /* 137.5% */
 }
+a{
+    text-decoration: none;
+}
 .explore span{
     align-self: stretch; 
     color: var(--Brand-Black, #000);

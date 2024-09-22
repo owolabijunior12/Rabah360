@@ -15,3 +15,18 @@ document.addEventListener("DOMContentLoaded", function() {
         comments[currentComment].classList.add("active");
     });
 });
+document.getElementById('loginForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+
+    document.getElementById('loader').style.display = 'block';
+
+
+    document.getElementById('submit-btn').disabled = true;
+
+
+    setTimeout(function() {
+    
+        document.getElementById('loginForm').submit();
+    }, 1000);
+});
