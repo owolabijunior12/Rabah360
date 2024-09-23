@@ -4,15 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="about.css">
-    <link rel="stylesheet" href="styles.css">
+     <link rel="stylesheet" href="styles.css">  
+    <link rel="stylesheet" href="loader.css"> 
     <link rel="stylesheet" href="mediaqueries.css">    
     <link rel="shortcut icon" href="./public/images/company-logo.png" type="image/x-icon">
     <title>About || Rabah360</title>
 </head>
 <body>
+    <div id="loader">
+        <div class="loader"></div> 
+    </div> 
     <nav>
         <!-- navbar image -->
-        <a href="/">
+        <a id="myLink" href="/">
             <div>        
                 <svg width="160" height="50" viewBox="0 0 160 50" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <rect x="-45.6743" y="-126.454" width="502.977" height="1147.74" fill="url(#pattern0_2001_177)"/>
@@ -26,28 +30,42 @@
             </div>
         </a>
         <!-- navbar lists -->
-        <div>
+        <div class="menu-icon" id="menuIcon" onclick="toggleMenu()">
+             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+  <path d="M3.00146 4.5H21.0015" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M3.00146 9.5H21.0015" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M3.00146 14.5H21.0015" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M3.00146 19.5H21.0015" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+        </div>
+    
+        <!-- Close Icon -->
+        <div class="close-icon" id="closeIcon" onclick="toggleMenu()">
+            <img src="close-icon.svg" alt="Close Icon">
+        </div>
+                <!-- Navbar lists -->
+        <div class="mobile-navbar" id="mobileNavbar">
             <ul>
                 <li>
-                    <a href="./about.html"   rel="noopener noreferrer">About</a>
+                    <a id="myLink" href="./about.html" rel="noopener noreferrer">About</a>
                 </li>
                 <li>
-                    <a href="./service.html"   rel="noopener noreferrer">Services</a>
+                    <a id="myLink" href="./service.html" rel="noopener noreferrer">Services</a>
                 </li>
+                   <!-- <li>
+                <a id="myLink" href="./pricing.html" rel="noopener noreferrer">Pricing</a>
+            </li> -->
                 <li>
-                    <a href="./about.css"   rel="noopener noreferrer">Pricing</a>
-                </li>
-                <li>
-                    <a href="./contact.html"   rel="noopener noreferrer">Contact</a>
+                    <a id="myLink" href="./contact.html" rel="noopener noreferrer">Contact</a>
                 </li>
             </ul>
         </div>
-        <!-- navbar buttons -->
-         <div class="navbar-btn-container">
-            <!-- <button onclick="toggleMenu()">Toggle Menu</button> -->
-            <button class="free-trial-btn">Free Trial</button>
-            <button class="login-btn"><a href="./login.html">Login</a></button>
-        </div>
+            <!-- navbar buttons -->
+             <div class="navbar-btn-container">
+                <!--  <button id="myButton" onclick="toggleMenu()">Toggle Menu</button> -->
+                 <button id="myButton" class="free-trial-btn">Free Trial</button>
+                 <button id="myButton" class="login-btn"><a id="myLink" href="./login.html">Login</a></button>
+            </div>
     </nav>
     <h1 class="first-header">Grow With Rabah360</h1>
     <p class="first-paragraph">Your Ministry is Our Ministry. We're in this together.</p>
@@ -350,7 +368,7 @@
         </div>
     </div>
     <div class="seventh-grouped-div">
-        <button id="prev-btn" class="nav-btn left-btn">❮</button>
+         <button id="myButton" id="prev-btn" class="nav-btn left-btn">❮</button>
         
         <div class="comment-wrapper">
             <div class="comment-container active" id="comment-1">
@@ -399,7 +417,7 @@
             </div>
         </div>
         
-        <button id="next-btn" class="nav-btn right-btn">❯</button>
+         <button id="myButton" id="next-btn" class="nav-btn right-btn">❯</button>
     </div>
     <footer>
         <div class="footer-label">
@@ -510,7 +528,7 @@
                 <h1>Newsletter</h1>
                 <div class="input">
                     <input type="text" placeholder="Input your email">
-                    <button>Subscribe</button>                 
+                     <button id="myButton">Subscribe</button>                 
                 </div>
                 <p>Sign up for our latest news & articles. We won’t give you spam mails.</p>
             </div>

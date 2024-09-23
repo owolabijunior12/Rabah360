@@ -1,3 +1,38 @@
+window.onload = function() {
+    setTimeout(function() {
+      document.getElementById('loader').style.display = 'none'; 
+      document.getElementById('main-content').style.display = 'block'; 
+    }, 2000); 
+  };
+  
+  function showLoader() {
+    document.getElementById('loader').style.display = 'flex'; 
+    setTimeout(function() {
+      document.getElementById('loader').style.display = 'none'; 
+    }, 2000);
+  }
+
+  
+  document.getElementById('myButton').addEventListener('click', function(event) {
+    event.preventDefault(); 
+    showLoader(); 
+  });
+
+  document.getElementById('myLink').addEventListener('click', function(event) {
+    event.preventDefault(); 
+    showLoader(); 
+});
+function toggleMenu() {
+    const mobileNavbar = document.getElementById('mobileNavbar');
+    const menuIcon = document.getElementById('menuIcon');
+    const closeIcon = document.getElementById('closeIcon');
+
+    mobileNavbar.classList.toggle('active');
+    
+    menuIcon.classList.toggle('hidden'); 
+    closeIcon.classList.toggle('hidden');
+}
+
 document.addEventListener("DOMContentLoaded", function() {
     let currentComment = 0;
     const comments = document.querySelectorAll(".comment-container");
@@ -29,4 +64,4 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     
         document.getElementById('loginForm').submit();
     }, 1000);
-});
+})

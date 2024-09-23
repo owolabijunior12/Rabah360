@@ -1,20 +1,33 @@
-/*  */
+
 body{
     padding: 0;
     width: 100vw;
     height: auto;
     margin: 0;
     color: #000;
+    overflow-y: auto;  
+    overflow-x: hidden;
+    scrollbar-width: thin;
+    scrollbar-color: #888 #f1f1f1;
+    padding-top: 76px;
 }
-/* navbar styles */
-nav{
+body::-webkit-scrollbar {
+    display: none;
+}
+
+nav {
     background: var(--Brand-Purple, #7D61F2);
-    display: flex;   
+    display: flex;
     height: 76px;
     padding: 8px 40px;
     justify-content: space-between;
     align-items: center;
     flex-shrink: 0;
+    
+    position: fixed; /* Make the navbar sticky */
+    top: 0; /* Stick the navbar to the top */
+    width: 100%; /* Ensure the navbar spans the full width */
+    z-index: 1000; /* Ensure it stays above other content */
 }
 
 nav ul{
@@ -72,7 +85,9 @@ nav ul li a{
     border-radius: 8px ;
     background: var(--Brand-Lemon, #D0EF4C);
 }
-/* hero content */
+
+
+
 .hero-content{
     display: inline-flex;
     position: relative;
@@ -128,7 +143,7 @@ nav ul li a{
     padding:8px 2px 2px 10px;
     gap: 0;
     text-align: ce;
-    /* justify-content: space-between; */
+    
     align-items: flex-start;
     flex-direction: column;
     bottom: 20%;
@@ -324,7 +339,7 @@ nav ul li a{
     font-size: 14px;
     font-style: normal;
     font-weight: 300;
-    line-height: 22px; /* 157.143% */
+    line-height: 22px; 
     letter-spacing: 0.28px;
     text-transform: uppercase;
 }
@@ -343,20 +358,20 @@ nav ul li a{
     font-size: 16px;
     font-style: normal;
     font-weight: 300;
-    line-height: 24px; /* 150% */
+    line-height: 24px; 
     align-self: stretch;
 }
 .quickly-div p{
     display: flex;
     justify-content: center;
     align-items: center;
-    /* gap: 4px; */
+    
     color: var(--Brand-Black, #000);
     font-family: Nunito;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
-    line-height: 20px; /* 142.857% */
+    line-height: 20px; 
     text-decoration-line: underline;
 }
 .quickly-div svg{
@@ -368,7 +383,7 @@ nav ul li a{
     padding: 40px;
     flex-direction: column;
     align-items: flex-start;
-    /* gap: 2px; */
+    
     align-self: stretch;
     border-radius: 16px;
     border: 2px solid #F4F5F7;
@@ -382,7 +397,7 @@ nav ul li a{
     font-size: 14px;
     font-style: normal;
     font-weight: 300;
-    line-height: 22px; /* 157.143% */
+    line-height: 22px; 
     letter-spacing: 0.28px;
     text-transform: uppercase;   
     display: -webkit-box;
@@ -405,7 +420,7 @@ nav ul li a{
     font-size: 16px;
     font-style: normal;
     font-weight: 300;
-    line-height: 24px; /* 150% */ 
+    line-height: 24px; 
     align-self: stretch;
 }
 .msg-div p:nth-child(4){
@@ -418,7 +433,7 @@ nav ul li a{
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
-    line-height: 20px; /* 142.857% */
+    line-height: 20px; 
     text-decoration-line: underline;
 }
 
@@ -431,7 +446,7 @@ nav ul li a{
     padding: 40px;
     flex-direction: column;
     align-items: flex-start;
-    /* gap: 8px; */
+    
     align-self: stretch;
     border-radius: 16px;
     border: 2px solid #F4F5F7;
@@ -450,7 +465,7 @@ nav ul li a{
     font-size: 14px;
     font-style: normal;
     font-weight: 300;
-    line-height: 22px; /* 157.143% */
+    line-height: 22px; 
     letter-spacing: 0.28px;
     text-transform: uppercase;
 }
@@ -470,7 +485,7 @@ nav ul li a{
     font-size: 16px;
     font-style: normal;
     font-weight: 300;
-    line-height: 24px; /* 150% */ 
+    line-height: 24px; 
     align-self: stretch;
 }
 .quickly-look-div p:nth-child(4){
@@ -483,7 +498,7 @@ nav ul li a{
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
-    line-height: 20px; /* 142.857% */
+    line-height: 20px; 
     text-decoration-line: underline;
 }
 .min-container{
@@ -509,7 +524,7 @@ nav ul li a{
     width: 50%;
     flex-direction: column;
     align-items: flex-start;
-    /* gap: 16px; */
+    
     align-self: stretch;
 }
 .grps-div p:nth-child(1){
@@ -524,7 +539,7 @@ nav ul li a{
     font-size: 14px;
     font-style: normal;
     font-weight: 300;
-    line-height: 22px; /* 157.143% */
+    line-height: 22px; 
     letter-spacing: 0.28px;
     text-transform: uppercase;
 }
@@ -543,7 +558,7 @@ nav ul li a{
     font-size: 16px;
     font-style: normal;
     font-weight: 300;
-    line-height: 24px; /* 150% */
+    line-height: 24px; 
     align-self: stretch;
 }
 .grps-div p:nth-child(4){
@@ -556,7 +571,7 @@ nav ul li a{
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
-    line-height: 20px; /* 142.857% */
+    line-height: 20px; 
     text-decoration-line: underline;
 }
 .rec-3{
@@ -613,7 +628,7 @@ nav ul li a{
     font-size: 14px;
     font-style: normal;
     font-weight: 300;
-    line-height: 22px; /* 157.143% */
+    line-height: 22px; 
     letter-spacing: 0.28px;
     text-transform: uppercase;
 }
@@ -634,7 +649,7 @@ nav ul li a{
     font-size: 16px;
     font-style: normal;
     font-weight: 300;
-    line-height: 24px; /* 150% */
+    line-height: 24px; 
 }
 
 .event-div p:nth-child(5){
@@ -647,7 +662,7 @@ nav ul li a{
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
-    line-height: 20px; /* 142.857% */
+    line-height: 20px; 
     text-decoration-line: underline;
 }
 .giving-div{
@@ -676,7 +691,7 @@ nav ul li a{
     font-size: 14px;
     font-style: normal;
     font-weight: 300;
-    line-height: 22px; /* 157.143% */
+    line-height: 22px; 
     letter-spacing: 0.28px;
     text-transform: uppercase;
 }
@@ -696,7 +711,7 @@ nav ul li a{
     font-size: 16px;
     font-style: normal;
     font-weight: 300;
-    line-height: 24px; /* 150% */
+    line-height: 24px; 
 }
 .giving-div p:nth-child(5){
     display: flex;
@@ -708,7 +723,7 @@ nav ul li a{
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
-    line-height: 20px; /* 142.857% */
+    line-height: 20px; 
     text-decoration-line: underline;
 }
 .forth-grouped-div{
@@ -756,9 +771,9 @@ nav ul li a{
     display: flex;
     align-items: center;
     object-fit: fill;
-     /* background-repeat: no-repeat;
-    background-size: cover; */
-    /*flex-shrink: 0; */
+     
+    background-size: cover; 
+    
     background: black;
 }
 .forth-grouped-div .img img{
@@ -843,7 +858,7 @@ nav ul li a{
     padding: 24px;
     flex-direction: column;
     align-items: flex-start;
-    /* gap: 24px; */
+    
     flex: 1 0 0;
     align-self: stretch;
     border-radius: 16px;
@@ -889,7 +904,7 @@ nav ul li a{
     padding: 8px 16px;
     justify-content: center;
     align-items: center;
-    /* gap: 10px; */
+    
     align-self: stretch;
     border-radius: 8px;
     background: var(--Brand-Lemon, #D0EF4C);
@@ -924,7 +939,7 @@ nav ul li a{
     padding: 24px;
     flex-direction: column;
     align-items: flex-start;
-    /* gap: 24px; */
+    
     flex: 1 0 0;
     align-self: stretch;
     border-radius: 16px;
@@ -934,7 +949,7 @@ nav ul li a{
     flex: 1 0 0;
     color: var(--Brand-Black, #000);
     font-family: Nunito;
-    /* font-size: 20px; */
+    
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -943,7 +958,7 @@ nav ul li a{
     display: flex;
     color: var(--Brand-Black, #000);
     font-family: Nunito;
-    /* font-size: 20px; */
+    
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -952,8 +967,8 @@ nav ul li a{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* flex: 1 0 0;
-    align-self: stretch; */
+    
+    align-self: stretch; 
     color: var(--Brand-Black, #000);
     font-family: Nunito;
     font-size: 16px;
@@ -967,7 +982,7 @@ nav ul li a{
     padding: 8px 16px;
     justify-content: center;
     align-items: center;
-    /* gap: 10px; */
+    
     align-self: stretch;
     border-radius: 8px;
     background: var(--Brand-Lemon, #D0EF4C);
@@ -1063,7 +1078,7 @@ line-height: normal;
     gap: 16px;
     justify-content: center;
 }
-/*  */
+
 .comment-wrapper{
     display: flex;
     width: 80%;
@@ -1128,7 +1143,7 @@ line-height: normal;
     align-items: center;
     gap: 12px;
 }
-/* footer styles */
+
 footer{
     display: flex;
     padding: 80px 120px;
@@ -1172,7 +1187,7 @@ font-family: Nunito;
 font-size: 16px;
 font-style: normal;
 font-weight: 400;
-line-height: 22px; /* 137.5% */
+line-height: 22px; 
 }
 .copyright span{
     color: var(--Brand-Black, #000);
@@ -1189,7 +1204,7 @@ line-height: 22px;
     font-size: 16px;
     font-style: normal;
     font-weight: 900;
-    line-height: 22px; /* 137.5% */
+    line-height: 22px; 
 }
 a{
     text-decoration: none;
@@ -1201,8 +1216,8 @@ a{
     font-size: 16px;
     font-style: normal;
     list-style: none;
-    /* font-weight: 400; */
-    line-height: 22px; /* 137.5% */
+    
+    line-height: 22px; 
 }
 .contact-us .contact-us-header{
     display: block;
@@ -1213,7 +1228,7 @@ a{
     margin-inline-end: 0px;
     font-weight: bold;
     unicode-bidi: isolate;
-line-height: 22px; /* 137.5% */
+line-height: 22px; 
 }
 .footer-groups{
     display: flex;
@@ -1232,7 +1247,7 @@ line-height: 22px; /* 137.5% */
     font-size: 16px;
     font-style: normal;
     font-weight: 900;
-    line-height: 22px; /* 137.5% */
+    line-height: 22px; 
 }
 .newletter p{
     width: 314.667px;
@@ -1241,7 +1256,7 @@ line-height: 22px; /* 137.5% */
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
-    line-height: 20px; /* 142.857% */
+    line-height: 20px; 
     }
 .newletter .input{
     display: flex;
@@ -1264,7 +1279,7 @@ line-height: 22px; /* 137.5% */
     font-style: normal;
     flex: 1 0 0;
     font-weight: 400;
-    line-height: 22px; /* 137.5% */
+    line-height: 22px; 
     border: none;
     border-radius: 7px;
 }   
@@ -1283,4 +1298,3 @@ background: var(--Brand-Lemon, #D0EF4C);
 }   
 
 
-  

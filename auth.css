@@ -162,20 +162,14 @@ line-height: 20px; /* 142.857% */
     line-height: 20px; /* 142.857% */
     align-self: stretch;
 }
-.loader {
-    border: 8px solid #fefefe;
-    border-radius: 50%;        
-    border-top: 8px solid #070707;
-    width: 20px;
-    height: 20px;
-    position: absolute;
-    top: 50%;    
-    animation: spin 2s linear infinite;
-    display: none;
-    margin: 20px auto;
-}
 
-@keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-}
+.loader {
+    width: 40px;
+    aspect-ratio: 1;
+    background: #7D61F2;
+    animation: l1 1s infinite;
+  }
+  @keyframes l1 {
+    0%   {transform: perspective(150px) rotateX(  0deg)}
+    100% {transform: perspective(150px) rotateX(180deg)}
+  }

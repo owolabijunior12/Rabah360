@@ -3,12 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+     <link rel="stylesheet" href="styles.css">  
+    <link rel="stylesheet" href="loader.css"> 
     <link rel="stylesheet" href="mediaqueries.css">
     <link rel="shortcut icon" href="./public/images/company-logo.png" type="image/x-icon">
     <title>Pricing || Rabah360</title>
 </head>
 <body>
+    <div id="loader">
+        <div class="loader"></div> 
+    </div> 
     <nav>
         <!-- navbar image -->
         <div>                
@@ -26,25 +30,25 @@
         <div>
             <ul>
                 <li>
-                    <a href="./about.html"   rel="noopener noreferrer">About</a>
+                    <a id="myLink" href="./about.html"   rel="noopener noreferrer">About</a>
                 </li>
                 <li>
-                    <a href="./service.html"   rel="noopener noreferrer">Services</a>
+                    <a id="myLink" href="./service.html"   rel="noopener noreferrer">Services</a>
                 </li>
                 <li>
-                    <a href="./pricing.html"   rel="noopener noreferrer">Pricing</a>
+                    <a id="myLink" href="./pricing.html"   rel="noopener noreferrer">Pricing</a>
                 </li>
                 <li>
-                    <a href="./contact.html"   rel="noopener noreferrer">Contact</a>
+                    <a id="myLink" href="./contact.html"   rel="noopener noreferrer">Contact</a>
                 </li>
             </ul>
         </div>
         <!-- navbar buttons -->
          <div class="navbar-btn-container">
-            <!-- <button onclick="toggleMenu()">Toggle Menu</button> -->
-            <button class="free-trial-btn">Free Trial</button>
-            <button class="login-btn">
-                <a href="./login.html"   rel="noopener noreferrer">Login</a>
+            <!--  <button id="myButton" onclick="toggleMenu()">Toggle Menu</button> -->
+             <button id="myButton" class="free-trial-btn">Free Trial</button>
+             <button id="myButton" class="login-btn">
+                <a id="myLink" href="./login.html"   rel="noopener noreferrer">Login</a>
             </button>
         </div>
     </nav>

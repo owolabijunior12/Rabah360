@@ -21,7 +21,7 @@
                 </svg>                
         </div>
         <h1>Create Account</h1>
-        <p>Existing user? <a href="/login.html"><span>Login</span></a> </p>
+        <p>Existing user? <a id="myLink" href="/login.html"><span>Login</span></a> </p>
         <form action="" method="post">
             <div class="form-container">
                 <div class="form-container">
@@ -48,8 +48,10 @@
                     <input type="checkbox" id="remember-me" name="remember-me">
                     <label for="remember-me">I accept Rabah360 <span>Terms</span> and <span>Conditions</span> </label>
                 </div>
-                <input type="submit" value="    Send Message" id="submit-btn">
-                <div class="loader" id="loader"></div>
+                <input type="submit" id="myButton" value="Send Message" id="submit-btn">
+                <div id="loader">
+                    <div class="loader"></div> 
+                </div> 
 
             </div>
         </form>
