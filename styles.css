@@ -5,8 +5,8 @@ body{
     height: auto;
     margin: 0;
     color: #000;
-    overflow-y: auto;  
-    overflow-x: hidden;
+    /* overflow-y: hidden;   */
+    overflow-x: hidden;    
     scrollbar-width: thin;
     scrollbar-color: #888 #f1f1f1;
     padding-top: 76px;
@@ -19,14 +19,14 @@ nav {
     background: var(--Brand-Purple, #7D61F2);
     display: flex;
     height: 76px;
-    padding: 8px 40px;
+    padding: 8px 2%;
     justify-content: space-between;
     align-items: center;
     flex-shrink: 0;
     
     position: fixed; /* Make the navbar sticky */
     top: 0; /* Stick the navbar to the top */
-    width: 100%; /* Ensure the navbar spans the full width */
+    width: 100vw; /* Ensure the navbar spans the full width */
     z-index: 1000; /* Ensure it stays above other content */
 }
 
@@ -34,6 +34,7 @@ nav ul{
     display: flex;
     align-items: center;
     gap: 24px;
+    list-style-type: none;
 }
 nav ul li{
     color: var(--Brand-Black, #000);

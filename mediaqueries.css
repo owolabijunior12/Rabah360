@@ -1,8 +1,14 @@
 /* Extra small devices (phones, 0px and up) */
 @media (max-width: 575.98px) {
     nav {
-        position: relative;
-
+    position: relative;
+    position: fixed; /* Make the navbar sticky */
+    top: 0; /* Stick the navbar to the top */
+    width: 100vw; /* Ensure the navbar spans the full width */
+    z-index: 1000;
+    }
+    body{
+        padding-top: 0px;
     }
     
     
@@ -356,6 +362,9 @@
 @media screen and (max-width: 768px) {
     nav {
         position: relative;
+    }
+    body{
+        padding-top: 0px;
     }
     
     
@@ -833,3 +842,6 @@
         display: none;
     }
 }
+
+
+  
