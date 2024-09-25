@@ -3,6 +3,9 @@ body{
     width: 100vw;
     height: 100vh;
     flex-direction: column;
+    overflow-x: hidden;
+    scrollbar-color: blue;
+    scrollbar-width: 2px;
     justify-content: center;
     align-items: center;
     background: var(--White-Main, #FFF);
@@ -20,7 +23,6 @@ body{
     padding: 20px;
     flex-direction: column;
     align-items: center;
-    /* gap: 2px; */
 }
 h1{
     color: var(--Brand-Black, #000);
@@ -70,7 +72,7 @@ form{
     font-size: 16px;
     font-style: normal;
     font-weight: 600;
-    line-height: 22px; /* 137.5% */
+    line-height: 22px; 
     align-self: stretch;    
 }
 .form-container input{
@@ -173,3 +175,4 @@ line-height: 20px; /* 142.857% */
     0%   {transform: perspective(150px) rotateX(  0deg)}
     100% {transform: perspective(150px) rotateX(180deg)}
   }
+  

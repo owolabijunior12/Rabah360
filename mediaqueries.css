@@ -1,16 +1,12 @@
 /* Extra small devices (phones, 0px and up) */
-@media (max-width: 575.98px) {
-    nav {
-    position: relative;
-    position: fixed; /* Make the navbar sticky */
-    top: 0; /* Stick the navbar to the top */
-    width: 100vw; /* Ensure the navbar spans the full width */
-    z-index: 1000;
-    }
+@media (max-width: 575.98px) {    
     body{
         padding-top: 0px;
+        overflow-x: hidden;
     }
-    
+    .first-service-container{
+        padding: 0px;
+    }
     
     .menu-icon {
         display: flex;
@@ -18,13 +14,11 @@
         align-items: center;
         height: 100%;
         position: absolute;
-        top: 50px;
-        /* background: #063c66; */
+        top: 80px;
         right: 20px;
         cursor: pointer;
     }
-    
-    
+
     .close-icon {
         display: none; 
         position: absolute;
@@ -40,7 +34,7 @@
         right: -100%; 
         width: 250px;
         height: 100%;
-        background-color: transparent;
+        background-color: var(--Brand-Purple, #7D61F2);
         transition: right 0.3s ease;
         box-shadow: -2px 0px 5px rgba(0, 0, 0, 0.5);
         transition: right 0.3s ease;
@@ -179,10 +173,10 @@
     .second-contrainer{
         padding: 0;
     }
-    .first-container{
-        padding: 10px 10px 10px 10px;
+        .first-container {
+        padding: 2px;
         width: 100vw;
-    }
+    } 
     .quickly-div{
         display: flex;
         width: 300px;
@@ -300,7 +294,10 @@
     .right-btn {
         right: 0;
     }
-    .first-container
+        .first-container {
+        padding: 0px;
+        width: 100vw;
+    }
     /* Optional styles for buttons */
     .nav-btn:hover {
         background-color: rgba(255, 255, 255, 0.8);
@@ -365,22 +362,30 @@
     }
     body{
         padding-top: 0px;
+        overflow-x: hidden;
+    }
+    .first-service-container{
+        padding: 1px;
+        padding-top: 75px;
     }
     
     
     .menu-icon {
         display: block; 
         position: absolute;
-        top: 10px;
+        top: 30px;
         right: 10px;
         cursor: pointer;
     }
-    
+    .menu-icon img{
+        height: 35px;
+        width: 35px;
+    }
     
     .close-icon {
         display: none; 
         position: absolute;
-        top: 10px;
+        top: 30px;
         right: 10px;
         cursor: pointer;
     }
@@ -392,7 +397,7 @@
         right: -100%; 
         width: 250px;
         height: 100%;
-        background-color: transparent;
+        background-color: var(--Brand-Purple, #7D61F2);
         transition: right 0.3s ease;
         box-shadow: -2px 0px 5px rgba(0, 0, 0, 0.5);
         transition: right 0.3s ease;
@@ -406,6 +411,9 @@
     
     
     .mobile-navbar.active {
+        right: 0; 
+    }
+    #mobile-btn.active {
         right: 0; 
     }
     
@@ -429,7 +437,10 @@
         font-size: 18px;
     }
     
-    
+    .first-container {
+        padding: 0px;
+        width: 100vw;
+    }
     .mobile-navbar .navbar-btn-container {
         display: none; 
         flex-direction: column;
@@ -471,8 +482,129 @@
     nav {
         position: relative;
     }
+    nav {
+        position: relative;
+    }
+    body{
+        padding-top: 0px;
+        overflow-x: hidden;
+    }
+    .first-service-container{
+        padding: 1px;
+        padding-top: 75px;
+    }
     
     
+    .menu-icon {
+        display: block; 
+        position: absolute;
+        top: 30px;
+        right: 10px;
+        cursor: pointer;
+    }
+    .menu-icon img{
+        height: 35px;
+        width: 35px;
+    }
+    
+    .close-icon {
+        display: none; 
+        position: absolute;
+        top: 30px;
+        right: 10px;
+        cursor: pointer;
+    }
+    
+    
+    .mobile-navbar {
+        position: fixed;
+        top: 0;
+        right: -100%; 
+        width: 250px;
+        height: 100%;
+        background-color: var(--Brand-Purple, #7D61F2);
+        transition: right 0.3s ease;
+        box-shadow: -2px 0px 5px rgba(0, 0, 0, 0.5);
+        transition: right 0.3s ease;
+        z-index: 1000;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 20px;
+        overflow-y: auto; 
+    }
+    
+    
+    .mobile-navbar.active {
+        right: 0; 
+    }
+    #mobile-btn.active {
+        right: 0; 
+    }
+    
+    .mobile-navbar ul {
+        list-style: none;
+        padding: 0;
+        display: none; 
+    }
+    
+    .mobile-navbar.active ul {
+        display: block; 
+    }
+    
+    .mobile-navbar ul li {
+        margin-bottom: 16px;
+    }
+    
+    .mobile-navbar ul li a {
+        color: black;
+        text-decoration: none;
+        font-size: 18px;
+    }
+    
+    .first-container {
+        padding: 0px;
+        width: 100vw;
+    }
+    .mobile-navbar .navbar-btn-container {
+        display: none; 
+        flex-direction: column;
+        gap: 16px;
+    }
+    
+    .mobile-navbar.active .navbar-btn-container {
+        display: flex; 
+    }
+    .menu-icon {
+        display: block; 
+    }
+
+    .close-icon {
+        display: none; 
+    }
+
+    .mobile-navbar.active ~ .menu-icon {
+        display: none; 
+    }
+
+    .mobile-navbar.active ~ .close-icon {
+        display: block; 
+    }
+
+    .mobile-navbar.active ul li a{
+        color: #F2F6F9;
+    }
+
+    nav ul {
+        display: none;        
+    }
+
+    .navbar-btn-container {
+        display: none; 
+    }
+    .first-service-container{
+        padding: 1px;
+    }
     .menu-icon {
         display: block; 
         position: absolute;
@@ -490,14 +622,16 @@
         cursor: pointer;
     }
     
-    
+    .first-service-container{
+        padding: 0px;
+    }
     .mobile-navbar {
         position: fixed;
         top: 0;
         right: -100%; 
         width: 250px;
         height: 100%;
-        background-color: transparent;
+        background-color: var(--Brand-Purple, #7D61F2);
         transition: right 0.3s ease;
         box-shadow: -2px 0px 5px rgba(0, 0, 0, 0.5);
         transition: right 0.3s ease;
@@ -508,7 +642,6 @@
         padding: 20px;
         overflow-y: auto; 
     }
-    
     
     .mobile-navbar.active {
         right: 0; 
@@ -572,7 +705,7 @@
         display: none; 
     }
     .first-container{
-        /* padding: 10px 10px 10px 10px; */
+        padding: 2px;
         width: 100vw;
     }
     .cs-div{

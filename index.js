@@ -24,10 +24,12 @@ window.onload = function() {
 });
 function toggleMenu() {
     const mobileNavbar = document.getElementById('mobileNavbar');
+    const mobilebtn = document.getElementById('mobile-btn');
     const menuIcon = document.getElementById('menuIcon');
     const closeIcon = document.getElementById('closeIcon');
 
     mobileNavbar.classList.toggle('active');
+    mobilebtn.classList.toggle('active');
     
     menuIcon.classList.toggle('hidden'); 
     closeIcon.classList.toggle('hidden');

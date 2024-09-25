@@ -150,3 +150,8 @@
     flex-direction: column;
     justify-content: center;
 }
+@media (max-width: 575.98px) { 
+    .first-service-container{
+        padding: 20px;
+    }
+}

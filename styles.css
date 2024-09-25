@@ -5,7 +5,7 @@ body{
     height: auto;
     margin: 0;
     color: #000;
-    /* overflow-y: hidden;   */
+
     overflow-x: hidden;    
     scrollbar-width: thin;
     scrollbar-color: #888 #f1f1f1;
@@ -18,16 +18,18 @@ body::-webkit-scrollbar {
 nav {
     background: var(--Brand-Purple, #7D61F2);
     display: flex;
+    width: 100%;
     height: 76px;
-    padding: 8px 2%;
+    padding: 8px 0px;
+    /* padding-right: 140px; */
     justify-content: space-between;
     align-items: center;
     flex-shrink: 0;
     
-    position: fixed; /* Make the navbar sticky */
-    top: 0; /* Stick the navbar to the top */
-    width: 100vw; /* Ensure the navbar spans the full width */
-    z-index: 1000; /* Ensure it stays above other content */
+    position: fixed; 
+    top: 0; 
+    width: 100vw; 
+    z-index: 1000; 
 }
 
 nav ul{
@@ -57,7 +59,7 @@ nav ul li a{
 .navbar-btn-container{
     display: flex;
     gap: 10px;    
-    padding: 8px 40px;
+    padding: 8px 20px;
     justify-content: space-between;
     align-items: center;
     flex-shrink: 0;
@@ -86,7 +88,9 @@ nav ul li a{
     border-radius: 8px ;
     background: var(--Brand-Lemon, #D0EF4C);
 }
-
+#mobile-btn{
+    display: none;
+}
 
 
 .hero-content{
@@ -1299,3 +1303,48 @@ background: var(--Brand-Lemon, #D0EF4C);
 }   
 
 
+
+button {
+    padding: 12px 24px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;       
+    z-index: 1;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+button::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background-color: rgba(55, 0, 179, 0.3);        
+    transform: translate(-50%, -50%) scale(0);      
+    transition: transform 0.4s ease;
+    border-radius: 50%;
+    z-index: 0;
+}
+
+button:hover::after {
+    transform: translate(-50%, -50%) scale(1);      
+}
+
+button:hover {
+    background-color: #3700b3;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+    transform: scale(0.95);
+    background-color: #3700b3;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+button:focus {
+    outline: none;
+}
