@@ -3,7 +3,7 @@
     align-self: stretch; 
     color: var(--Brand-Black, #000);
     text-align: center;
-    font-family: Nunito;
+  
     font-size: 60px;
     font-style: normal;
     font-weight: 700;
@@ -13,7 +13,7 @@
     align-self: stretch;
     color: var(--Brand-Black, #000);
     text-align: center;
-    font-family: Nunito;
+  
     font-size: 16px;
     font-style: normal;
     font-weight: 300;
@@ -49,7 +49,7 @@
     align-self: stretch;
     color: var(--Brand-Black, #000);
     text-align: center;
-    font-family: Nunito;
+  
     font-size: 30px;
     font-style: normal;
     font-weight: 600;
@@ -59,7 +59,7 @@
 .our-story p{
     color: var(--Brand-Black, #000);
     text-align: center;
-    font-family: Nunito;
+  
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -78,7 +78,7 @@
 .mission h1{
     align-self: stretch;
     color: var(--Brand-Black, #000);
-    font-family: Nunito;
+  
     font-size: 30px;
     font-style: normal;
     font-weight: 600;
@@ -88,7 +88,7 @@
 .value h1{
     align-self: stretch;
     color: var(--Brand-Black, #000);
-    font-family: Nunito;
+  
     font-size: 30px;
     font-style: normal;
     font-weight: 600;
@@ -97,7 +97,7 @@
 }
 .value p{
     color: var(--Brand-Black, #000);
-    font-family: Nunito;
+  
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -131,7 +131,7 @@
 }
 .faq-label h1{
     color: var(--Brand-Lemon, #D0EF4C);
-    font-family: Nunito;
+  
     font-size: 20px;
     font-style: normal;
     font-weight: 400;

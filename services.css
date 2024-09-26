@@ -20,7 +20,7 @@
 }
 .our-service-label h1{
     color: var(--Brand-Lemon, #D0EF4C);
-    font-family: Nunito;
+  
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -30,7 +30,7 @@
 .whyrabah{
     color: var(--Brand-Black, #000);
     text-align: center;
-    font-family: Nunito;
+  
     font-size: 40px;
     font-style: normal;
     font-weight: 700;
@@ -66,7 +66,7 @@
 }
 .service-div h1{
     color: var(--Brand-Black, #000);
-    font-family: Nunito;
+  
     font-size: 30px;
     font-style: normal;
     font-weight: 700;
@@ -75,7 +75,7 @@
 }
 .service-div p{
     color: var(--Brand-Black, #000);
-    font-family: Nunito;
+  
     font-size: 16px;
     font-style: normal;
     font-weight: 300;
@@ -104,7 +104,7 @@
 }
 .faq-label h1{
     color: var(--Brand-Lemon, #D0EF4C);
-    font-family: Nunito;
+  
     font-size: 20px;
     font-style: normal;
     font-weight: 400;

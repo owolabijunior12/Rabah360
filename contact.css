@@ -21,7 +21,7 @@
 .help h1{
     color: var(--Brand-Black, #000);
     text-align: center;
-    font-family: Nunito;
+  
     font-size: 40px;
     font-style: normal;
     font-weight: 700;
@@ -42,7 +42,7 @@
     align-items: center;
     gap: 4px;
     color: var(--Black-500, #1C1C1C);
-    font-family: Nunito;
+  
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -99,7 +99,7 @@
 .help-container div a{
     color: var(--Brand-Black, #000);
     text-align: center;
-    font-family: Nunito;
+  
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -121,7 +121,7 @@
 .cs-div h1{
     color: var(--Brand-Black, #000);
     text-align: center;
-    font-family: Nunito;
+  
     font-size: 40px;
     font-style: normal;
     font-weight: 700;
@@ -147,7 +147,7 @@ form{
 }
 .form-container label{
     color: var(--Brand-Black, #000);
-    font-family: Nunito;
+  
     font-size: 16px;
     font-style: normal;
     font-weight: 600;
@@ -165,7 +165,7 @@ form{
     border: 1px solid var(--White-Main, #FFF);
     background: var(--White-Main, #FFF);
     color: var(--Black-500, #1C1C1C);
-    font-family: Nunito;
+  
     font-size: 16px;
     flex: 1 0 0;
     font-style: normal;
