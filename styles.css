@@ -11,8 +11,26 @@ body{
     scrollbar-color: #888 #f1f1f1;
     padding-top: 76px;
 }
-body::-webkit-scrollbar {
-    display: none;
+
+/* Style for the theme toggle button */
+.theme-toggle-btn {
+    padding: 10px 15px;
+    background-color: #292D32;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    margin: 10px;
+}
+
+.theme-toggle-btn:hover {
+    background-color: #424242;
+}
+
+.theme-toggle-btn.dark-mode {
+    background-color: white;
+    color: black;
 }
 
 nav {
@@ -39,7 +57,7 @@ nav ul{
     list-style-type: none;
 }
 nav ul li{
-    color: var(--Brand-Black, #000);
+   
     text-align: center;
   
     font-size: 16px;
@@ -171,7 +189,7 @@ nav ul li a{
     align-self: stretch;
 }
 .hero-active-user span{
-    color: var(--Brand-Black, #000);
+   
   
     font-size: 18.3px;
     font-style: normal;
@@ -203,7 +221,7 @@ nav ul li a{
     line-height: normal;
 }
 .hero-contribution span{
-    color: var(--Brand-Black, #000);
+   
   
     font-size: 19.533px;
     font-style: normal;
@@ -236,10 +254,10 @@ nav ul li a{
     align-items: center;
     gap: 24px;
     align-self: stretch;
-    background: var(--White-Main, #FFF);
+ 
 }
 .second-contrainer h4{
-    color: var(--Brand-Black, #000);
+   
     text-align: center;
   
     font-size: 25px;
@@ -279,7 +297,7 @@ nav ul li a{
     align-items: center;
     gap: 40px;
     align-self: stretch;
-    background: #F4F4F4;
+
 }
 .chms{
     display: flex;
@@ -301,7 +319,7 @@ nav ul li a{
     text-transform: uppercase;
 }
 .powerful-div{
-    color: var(--Brand-Black, #000);
+   
     text-align: center;
   
     align-self: stretch;
@@ -327,7 +345,8 @@ nav ul li a{
     align-self: stretch;
     border-radius: 16px;
     border: 2px solid #F2F6F9;
-    background: var(--White-Main, #FFF);
+
+
 }
 .quickly-div .rec-img{
     width: 420px;
@@ -352,7 +371,7 @@ nav ul li a{
     text-transform: uppercase;
 }
 .quickly-div span:nth-child(1){
-    color: var(--Brand-Black, #000);
+   
   
     font-size: 30px;
     font-style: normal;
@@ -361,7 +380,7 @@ nav ul li a{
     line-height: normal;
 }
 .quickly-div span:nth-child(2){
-    color: var(--Brand-Black, #000);
+   
   
     font-size: 16px;
     font-style: normal;
@@ -374,7 +393,7 @@ nav ul li a{
     justify-content: center;
     align-items: center;
     
-    color: var(--Brand-Black, #000);
+   
   
     font-size: 14px;
     font-style: normal;
@@ -414,7 +433,7 @@ nav ul li a{
     align-self: stretch;
 }
 .msg-div p:nth-child(2){
-    color: var(--Brand-Black, #000);
+   
   
     font-size: 30px;
     font-style: normal;
@@ -423,7 +442,7 @@ nav ul li a{
     align-self: stretch;
 }
 .msg-div p:nth-child(3){
-    color: var(--Brand-Black, #000);
+   
   
     font-size: 16px;
     font-style: normal;
@@ -436,7 +455,7 @@ nav ul li a{
     justify-content: center;
     align-items: center;
     gap: 4px;
-    color: var(--Brand-Black, #000);
+   
   
     font-size: 14px;
     font-style: normal;
@@ -480,7 +499,7 @@ nav ul li a{
 
 .quickly-look-div p:nth-child(2){
     align-self: stretch;
-    color: var(--Brand-Black, #000);
+   
   
     font-size: 30px;
     font-style: normal;
@@ -488,7 +507,7 @@ nav ul li a{
     line-height: normal;
 }
 .quickly-look-div p:nth-child(3){
-    color: var(--Brand-Black, #000);
+   
   
     font-size: 16px;
     font-style: normal;
@@ -501,7 +520,7 @@ nav ul li a{
     justify-content: center;
     align-items: center;
     gap: 4px;
-    color: var(--Brand-Black, #000);
+   
   
     font-size: 14px;
     font-style: normal;
@@ -553,7 +572,7 @@ nav ul li a{
 }
 .grps-div p:nth-child(2){
     align-self: stretch;
-    color: var(--Brand-Black, #000);
+   
   
     font-size: 30px;
     font-style: normal;
@@ -561,7 +580,7 @@ nav ul li a{
     line-height: normal;
 }
 .grps-div p:nth-child(3){
-    color: var(--Brand-Black, #000);
+   
   
     font-size: 16px;
     font-style: normal;
@@ -574,7 +593,7 @@ nav ul li a{
     justify-content: center;
     align-items: center;
     gap: 4px;
-    color: var(--Brand-Black, #000);
+   
   
     font-size: 14px;
     font-style: normal;
@@ -643,7 +662,7 @@ nav ul li a{
 
 .event-div p:nth-child(2){
     align-self: stretch;
-    color: var(--Brand-Black, #000);
+   
   
     font-size: 30px;
     font-style: normal;
@@ -652,7 +671,7 @@ nav ul li a{
 }
 .event-div p:nth-child(3){
     align-self: stretch;
-    color: var(--Brand-Black, #000);
+   
   
     font-size: 16px;
     font-style: normal;
@@ -665,7 +684,7 @@ nav ul li a{
     justify-content: center;
     align-items: center;
     gap: 4px;
-    color: var(--Brand-Black, #000);
+   
   
     font-size: 14px;
     font-style: normal;
@@ -705,7 +724,7 @@ nav ul li a{
 }
 
 .giving-div p:nth-child(2){
-    color: var(--Brand-Black, #000);
+   
   
     font-size: 30px;
     font-style: normal;
@@ -714,7 +733,7 @@ nav ul li a{
     align-self: stretch;
 }
 .giving-div p:nth-child(3){
-    color: var(--Brand-Black, #000);
+   
   
     font-size: 16px;
     font-style: normal;
@@ -726,7 +745,7 @@ nav ul li a{
     justify-content: center;
     align-items: center;
     gap: 4px;
-    color: var(--Brand-Black, #000);
+   
   
     font-size: 14px;
     font-style: normal;
@@ -754,7 +773,7 @@ nav ul li a{
     gap: 8px;
 }
 .forth-grouped-div .for-you p{
-    color: var(--Brand-Black, #000);
+   
   
     font-size: 20px;
     font-style: normal;
@@ -763,7 +782,7 @@ nav ul li a{
     text-transform: uppercase;
 }
 .forth-grouped-div p{
-    color: var(--Brand-Black, #000);
+   
     text-align: center;
   
     font-size: 25px;
@@ -801,7 +820,7 @@ nav ul li a{
     gap: 10px;
 }
 .forth-grouped-div .free-trial-btn p{
-    color: var(--Brand-Black, #000);
+   
   
     font-size: 16px;
     font-style: normal;
@@ -809,7 +828,7 @@ nav ul li a{
     line-height: normal;
 }
 .ortalk{
-    color: var(--Brand-Black, #000);
+   
   
     font-size: 8px;
     font-style: normal;
@@ -848,7 +867,7 @@ nav ul li a{
 }
 .everything{
     align-self: stretch;
-    color: var(--Brand-Black, #000);
+   
     text-align: center;
   
     font-size: 33px;
@@ -878,7 +897,7 @@ nav ul li a{
 
     justify-content: center;
     gap: 3px;    
-    color: var(--Brand-Black, #000);
+   
   
     font-size: 20px;
     font-style: normal;
@@ -887,7 +906,7 @@ nav ul li a{
 }
 .start-div .amount p{
     display: flex;
-    color: var(--Brand-Black, #000);
+   
   
     font-size: 20px;
     font-style: normal;
@@ -899,7 +918,7 @@ nav ul li a{
     flex-direction: column;
     justify-content: center;
 
-    color: var(--Brand-Black, #000);
+   
   
     font-size: 16px;
     font-style: normal;
@@ -918,7 +937,7 @@ nav ul li a{
     background: var(--Brand-Lemon, #D0EF4C);
 }
 .start-btn p{
-    color: var(--Brand-Black, #000);
+   
   
     text-align: center;
     font-size: 16px;
@@ -934,7 +953,7 @@ nav ul li a{
     gap: 24px;
 }
 .dtls p{
-    color: var(--Brand-Black, #000);
+   
   
     font-size: 14px;
     font-style: normal;
@@ -955,7 +974,7 @@ nav ul li a{
 }
 .flex-div p{
     flex: 1 0 0;
-    color: var(--Brand-Black, #000);
+   
   
     
     font-style: normal;
@@ -964,7 +983,7 @@ nav ul li a{
 }
 .flex-div p:nth-child(2){
     display: flex;
-    color: var(--Brand-Black, #000);
+   
   
     
     font-style: normal;
@@ -977,7 +996,7 @@ nav ul li a{
     justify-content: center;
     
     align-self: stretch; 
-    color: var(--Brand-Black, #000);
+   
   
     font-size: 16px;
     font-style: normal;
@@ -996,7 +1015,7 @@ nav ul li a{
     background: var(--Brand-Lemon, #D0EF4C);
 }
 .flex-btn p{
-    color: var(--Brand-Black, #000);
+   
   
     text-align: center;
     font-size: 16px;
@@ -1012,7 +1031,7 @@ nav ul li a{
     gap: 24px;
 }
 .dtls p{
-    color: var(--Brand-Black, #000);
+   
   
     font-size: 14px;
     font-style: normal;
@@ -1021,7 +1040,7 @@ nav ul li a{
     flex: 1 0 0;
 }
 .flex{
-    color: var(--Brand-Black, #000);
+   
 font-family: Nunito;
 font-size: 20px;
 font-style: normal;
@@ -1057,7 +1076,7 @@ line-height: normal;
     text-transform: uppercase;
 }
 .sixth-grouped-div p{
-    color: var(--Brand-Black, #000);
+   
     text-align: center;
   
     font-size: 33px;
@@ -1117,7 +1136,7 @@ line-height: normal;
     background: url(./public/images/Ellipse\ 9.svg) lightgray 50% / cover no-repeat;
 }
 .username{
-    color: var(--Brand-Black, #000);
+   
   
     font-size: 18px;
     font-style: normal;
@@ -1136,7 +1155,7 @@ line-height: normal;
     align-self: stretch;
 }
 .comment{
-    color: var(--Brand-Black, #000);
+   
   
     font-size: 14px;
     font-style: normal;
@@ -1189,7 +1208,7 @@ border: 1px solid #090302;
    background-color: #000;
 }
 .copyright{
-    color: var(--Brand-Black, #000);
+   
 text-align: center;
 font-family: Nunito;
 font-size: 16px;
@@ -1198,7 +1217,7 @@ font-weight: 400;
 line-height: 22px; 
 }
 .copyright span{
-    color: var(--Brand-Black, #000);
+   
 font-family: Nunito;
 font-size: 16px;
 font-style: normal;
@@ -1207,7 +1226,7 @@ line-height: 22px;
 }
 .explore p{
     align-self: stretch;
-    color: var(--Brand-Black, #000);
+   
   
     font-size: 16px;
     font-style: normal;
@@ -1219,7 +1238,7 @@ a{
 }
 .explore span{
     align-self: stretch; 
-    color: var(--Brand-Black, #000);
+   
   
     font-size: 16px;
     font-style: normal;
@@ -1250,7 +1269,7 @@ line-height: 22px;
 }
 .newsletter h1{
     align-self: stretch;
-    color: var(--Brand-Black, #000);
+   
   
     font-size: 16px;
     font-style: normal;

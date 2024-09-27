@@ -5,7 +5,7 @@
     align-items: center;
     gap: 80px;
     align-self: stretch;
-    background: var(--White-Main, #FFF);
+/*  */
 }
 .help{
     border-radius: 8px;
@@ -19,7 +19,7 @@
     align-self: stretch;
 }
 .help h1{
-    color: var(--Brand-Black, #000);
+  
     text-align: center;
   
     font-size: 40px;
@@ -48,15 +48,14 @@
     font-weight: 400;
     line-height: 22px; /* 137.5% */
     flex: 1 0 0;
-    border-radius: 8px;
-    background: var(--White-Main, #FFF);
+    border-radius: 8px;    
 }
 .icon{
     position: absolute;
     top: 50%;
     left: 16px;
     transform: translateY(-50%);
-    color: var(--Brand-Black, #000);
+  
     font-size: 24px;
     font-weight: 400;
     line-height: 24px; /* 100% */
@@ -87,7 +86,7 @@
     gap: 16px;
     flex: 1 0 0;
     border-radius: 8px;
-    background: #F4F4F4;
+    /* background: #F4F4F4; */
 }
 .help-container div svg{
     display: flex;
@@ -97,7 +96,7 @@
     align-items: center;
 }
 .help-container div a{
-    color: var(--Brand-Black, #000);
+  
     text-align: center;
   
     font-size: 18px;
@@ -114,12 +113,11 @@
     flex-direction: column;
     align-items: center;
     gap: 80px;
-    align-self: stretch;
-    background: var(--White-Main, #FFF);
+    align-self: stretch;    
 }
 
 .cs-div h1{
-    color: var(--Brand-Black, #000);
+  
     text-align: center;
   
     font-size: 40px;
@@ -146,7 +144,7 @@ form{
     align-self: stretch;
 }
 .form-container label{
-    color: var(--Brand-Black, #000);
+  
   
     font-size: 16px;
     font-style: normal;
@@ -162,8 +160,7 @@ form{
     gap: 4px;
     align-self: stretch;
     border-radius: 8px;
-    border: 1px solid var(--White-Main, #FFF);
-    background: var(--White-Main, #FFF);
+    border: 1px solid var(--White-Main, #FFF);    
     color: var(--Black-500, #1C1C1C);
   
     font-size: 16px;
@@ -190,7 +187,7 @@ font-weight: 400;
 line-height: 22px; /* 137.5% */
 }
 .form-container #submit-btn{
-    color: var(--Brand-Black, #000);
+  
     text-align: center;
     font-family: "DM Sans";
     font-size: 16px;

@@ -1,7 +1,7 @@
 
 .first-header{
     align-self: stretch; 
-    color: var(--Brand-Black, #000);
+    /* color: var(--Brand-Black, #000); */
     text-align: center;
   
     font-size: 60px;
@@ -11,7 +11,7 @@
 }
 .first-paragraph{
     align-self: stretch;
-    color: var(--Brand-Black, #000);
+    /* color: var(--Brand-Black, #000); */
     text-align: center;
   
     font-size: 16px;
@@ -27,9 +27,9 @@
     flex-shrink: 0;
 }
 .first-container{
-    background: #F4F4F4;
+    
     display: flex;
-    padding: 120px 120px 80px 120px;
+    padding:  80px;
     flex-direction: column;
     align-items: center;
     gap: 80px;
@@ -43,11 +43,11 @@
     align-items: center;
     gap: 16px;
     border-radius: 8px;
-    background: var(--White-Main, #FFF); 
+ 
 }
 .our-story h1{
     align-self: stretch;
-    color: var(--Brand-Black, #000);
+    /* color: var(--Brand-Black, #000); */
     text-align: center;
   
     font-size: 30px;
@@ -57,7 +57,7 @@
     text-transform: capitalize;
 }
 .our-story p{
-    color: var(--Brand-Black, #000);
+    /* color: var(--Brand-Black, #000); */
     text-align: center;
   
     font-size: 18px;
@@ -68,8 +68,8 @@
     align-self: stretch;
 }
 .our-mission-value{
-    display: flex;    
-    width: 100vw;
+    display: flex;     
+    width: 100%;
     justify-content: space-around;
     gap: 32px;
     align-self: stretch;
@@ -77,7 +77,7 @@
 
 .mission h1{
     align-self: stretch;
-    color: var(--Brand-Black, #000);
+    /* color: var(--Brand-Black, #000); */
   
     font-size: 30px;
     font-style: normal;
@@ -87,7 +87,7 @@
 }
 .value h1{
     align-self: stretch;
-    color: var(--Brand-Black, #000);
+    /* color: var(--Brand-Black, #000); */
   
     font-size: 30px;
     font-style: normal;
@@ -96,7 +96,7 @@
     text-transform: capitalize;
 }
 .value p{
-    color: var(--Brand-Black, #000);
+    /* color: var(--Brand-Black, #000); */
   
     font-size: 18px;
     font-style: normal;

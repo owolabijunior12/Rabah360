@@ -6,7 +6,7 @@
     align-items: center;
     gap: 40px;
     align-self: stretch;
-    background: var(--White-Main, #FFF);
+    /* background: var(--White-Main, #FFF); */
 }
 .our-service-label{
     display: flex;
@@ -28,7 +28,7 @@
     text-transform: uppercase;
 }
 .whyrabah{
-    color: var(--Brand-Black, #000);
+   
     text-align: center;
   
     font-size: 40px;
@@ -54,7 +54,7 @@
     align-items: center;
     gap: 5px;
     border-radius: 16px;
-    background: #F4F4F4;
+
 }
 .service-img-div{
     width: 100%;
@@ -65,7 +65,7 @@
     width: 100%;
 }
 .service-div h1{
-    color: var(--Brand-Black, #000);
+   
   
     font-size: 30px;
     font-style: normal;
@@ -74,7 +74,7 @@
     align-self: stretch;
 }
 .service-div p{
-    color: var(--Brand-Black, #000);
+   
   
     font-size: 16px;
     font-style: normal;
@@ -83,7 +83,7 @@
     align-self: stretch;
 }
 .faq{
-    background: #F4F4F4;
+
     display: flex;
     gap: 10px;
     padding: 20px 20px;
