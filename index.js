@@ -68,54 +68,67 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     }, 1000);
 })
 
-// Select the toggle button
-const themeToggleBtn = document.getElementById('theme-toggle');
-themeToggleBtn.addEventListener("click",()=>{
-  console.log("hello");
-  
-})
-// Check if the user has a previously saved theme preference
-let darkMode = localStorage.getItem('darkMode');
-
-// Enable Dark Mode
-const enableDarkMode = () => {
-    document.body.classList.add('dark-mode'); // Add the dark-mode class to body
-    localStorage.setItem('darkMode', 'enabled'); // Store user's preference
-};
-
-// Disable Dark Mode
-const disableDarkMode = () => {
-    document.body.classList.remove('dark-mode'); // Remove the dark-mode class from body
-    localStorage.setItem('darkMode', 'disabled'); // Store user's preference
-};
-
-// Check the user's theme preference and apply it
-if (darkMode === 'enabled') {
-    enableDarkMode();
-} else {
-    disableDarkMode();
-}
-const themes = ()=>{
-  console.log("hello");
-  
-    darkMode = localStorage.getItem('darkMode'); // Get current state
-
-    if (darkMode !== 'enabled') {
-        enableDarkMode(); // Enable dark mode if it is not enabled
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    // Check for dark mode preference in localStorage or set default to light
+    if (localStorage.getItem('theme') === 'dark') {
+        document.body.classList.add('dark-mode');
+        document.body.classList.remove('light-mode');
     } else {
-        disableDarkMode(); // Disable dark mode if it is enabled
-    }
-}
-
-// Toggle between themes on button click
-themeToggleBtn.addEventListener('click', () => {
-  console.log("hello");
-  
-    darkMode = localStorage.getItem('darkMode'); // Get current state
-
-    if (darkMode !== 'enabled') {
-        enableDarkMode(); // Enable dark mode if it is not enabled
-    } else {
-        disableDarkMode(); // Disable dark mode if it is enabled
+        document.body.classList.add('light-mode');
+        document.body.classList.remove('dark-mode');
     }
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+  // Check for dark mode preference in localStorage or set default to light
+  const theme = localStorage.getItem('theme') || 'light'; // Default to light
+  if (theme === 'dark') {
+      document.body.classList.add('dark-mode');
+      document.body.classList.remove('light-mode');
+  } else {
+      document.body.classList.add('light-mode');
+      document.body.classList.remove('dark-mode');
+  }
+});
+const theme = localStorage.getItem('theme') ; //
+function themes() {
+  const body = document.body;
+
+  // Toggle dark and light mode
+  if (body.classList.contains('dark-mode')) {
+      body.classList.remove('dark-mode');      
+      localStorage.setItem('theme', 'light'); // Store the current theme as 'light'
+  } else {      
+      body.classList.add('dark-mode');
+      localStorage.setItem('theme', 'dark'); // Store the current theme as 'dark'
+  }
+
+  // Select all elements that need to switch themes
+  const elements = document.querySelectorAll(
+      '.second-container, .third-container, .quickly-div, .start-div, .flex-div, .person, .second-grouped-div, .sixth-grouped-div, .comment-container, .msg-div, .quickly-look-div, .grps-div, .event-div, .giving-div, .help-container div, .help-container div a, .first-container, .our-story, .service-div.form, .fifth-groupd-div, .cs-div, .faq, .first-div-contact, .first-service-container,.forth-grouped-div ,.form,.form input,.form textarea'
+  );
+
+  // Apply the theme to selected elements
+  elements.forEach((el) => {
+      if (body.classList.contains('dark-mode')) {
+          el.classList.add('dark-mode');         
+      } else {
+          el.classList.remove('dark-mode');
+         
+      }
+  });
+}
+
+// Load theme on page load
+document.addEventListener('DOMContentLoaded', () => {
+  // const theme = localStorage.getItem('theme') || 'light'; // Default to light if no theme is set
+  if (theme === 'dark') {
+      document.body.classList.add('dark-mode');
+  } else {
+      document.body.classList.add('');
+  }
+
+  // Apply the theme to elements on load
+});
+themes(); // Call themes to apply the correct classes to elements

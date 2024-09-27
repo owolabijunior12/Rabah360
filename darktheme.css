@@ -28,7 +28,7 @@ body.dark-mode {
     color: white;
 }
 
-.msg-div.dark-mode {
+.msg-div.dark-mode,.forth-grouped-div.dark-mode{
     background: var(--White-Main, #424242);
     color: white;
 }
@@ -48,7 +48,7 @@ body.dark-mode {
     color: white;
 }
 
-.giving-div.dark-mode, .help-container div.dark-mode, .help-container div a.dark-mode {
+.giving-div.dark-mode,.sixth-grouped-div .person.dark-mode , .help-container div.dark-mode, .help-container div a.dark-mode {
     background: var(--White-Main, #424242);
     color: white;
 }
@@ -63,13 +63,14 @@ body.dark-mode {
     color: white;
 }
 
-.our-story.dark-mode, .service-div.form.dark-mode {
+.our-story.dark-mode,.cs-div.dark-mode, .form.dark-mode, .service-div.form.dark-mode {
     background: var(--White-Main, #424242);
     color: white;
 }
 
 body.dark-mode, .fifth-groupd-div.dark-mode, .cs-div.dark-mode, .faq.dark-mode, 
-.first-div-contact.dark-mode, .first-service-container.dark-mode {
+.first-div-contact.dark-mode,.form input.dark-mode,.form textarea.dark-mode, .first-service-container.dark-mode {
     background: var(--White-Main, #000000);
     color: #fff;
+    
 }

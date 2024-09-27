@@ -125,7 +125,7 @@ body, .fifth-groupd-div, .cs-div, .faq,
     background: var(--white-Main, #ffffff);
     color: black;
 }
-.our-story, .service-div.form {
+.our-story, .service-div.form ,.forth-grouped-div{
     background: var(--Gray-Main, #e0e0e0);
     color: black;
 }

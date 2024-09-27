@@ -754,7 +754,7 @@ nav ul li a{
     text-decoration-line: underline;
 }
 .forth-grouped-div{
-    background: #F4F4F4;
+    /* background: #F4F4F4; */
     display: flex;
     padding: 80px 100px;
     flex-direction: column;
@@ -1103,6 +1103,7 @@ line-height: normal;
 .seventh-grouped-div{
     display: flex;
     gap: 16px;
+    padding:40px 10px ;
     justify-content: center;
 }
 
