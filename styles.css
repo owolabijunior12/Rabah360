@@ -14,19 +14,20 @@ body{
 
 /* Style for the theme toggle button */
 .theme-toggle-btn {
-    padding: 10px 15px;
-    background-color: #292D32;
-    color: white;
-    border: none;
+    /* padding: 10px 15px; */
+    background-color: transparent;
+    /* color: white; */
+    /* border: none; */
+
     cursor: pointer;
     border-radius: 5px;
-    font-size: 14px;
-    margin: 10px;
+    /* font-size: 6px; */
+    /* margin: 10px; */
 }
 
-.theme-toggle-btn:hover {
+/* .theme-toggle-btn:hover {
     background-color: #424242;
-}
+} */
 
 .theme-toggle-btn.dark-mode {
     background-color: white;
