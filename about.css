@@ -143,15 +143,22 @@
     border-radius: 40px;
     border: 2px solid var(--Brand-Lemon, #D0EF4C);
     background: var(--Brand-Black, #000);
-}
-.faq-label h1{
+    padding: 8px 24px 8px 24px;
     color: var(--Brand-Lemon, #D0EF4C);
-  
+    /* width: Hug (216px)px;
+height: Hug (43px)px;
+gap: 8px;
+border-radius: 40px 0px 0px 0px;
+border: 2px 0px 0px 0px;
+opacity: 0px;
+ */
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     text-transform: uppercase;
+}
+.faq-label h1{
 }
 .faq-details{
     display: flex;
