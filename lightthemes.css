@@ -17,6 +17,7 @@ body,
 .longdiv,
 .grps-div, 
 .event-div, 
+.our-story,
 .quickly-look-div,
 .quickly-div,
 .sixth-grouped-div, 
@@ -25,17 +26,18 @@ body,
     color: black;
 }
 
+
 .second-container, 
 .third-container,  
 .start-div, 
 .flex-div, 
+.first-container-abt,
 .person, 
 .sixth-grouped-div, 
 .comment-container, 
 .giving-div, 
 .help-container div, 
-.help-container div a, 
-.our-story, 
+.help-container div a,  
 .service-div, 
 .form {
     background-color: var(--gray-Main, #F4F4F4);

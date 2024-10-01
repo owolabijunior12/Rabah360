@@ -50,10 +50,10 @@
 <div class="mobile-navbar" id="mobileNavbar">
     <ul>
         <li>
-            <a id="myLink" href="./about.html" rel="noopener noreferrer">About</a>
+            <a id="myLink" style="font-weight: 900; text-decoration: underline; color:yellow" href="./about.html" rel="noopener noreferrer">About</a>
         </li>
         <li>
-            <a id="myLink" href="./service.html" rel="noopener noreferrer">Services</a>
+            <a id="myLink" href="./service.html" rel="noopener noreferrer" >Services</a>
         </li>
         
         <li>
@@ -67,15 +67,13 @@
         </li>
     </ul>
 </div>
-<!-- <div class="theme-toggle" id="themeToggleContainer"></div>
-    <button id="theme-toggle" onclick="themes()" class="theme-toggle-btn">Switch Theme</button>
-</div> -->
+
 <div id="mobile-btn">
     <button id="myButton" class="free-trial-btn">Free Trial</button>
     <a id="myLink" href="./login.html"><button id="myButton" class="login-btn">Login</button></a>
 </div>
 
-<!-- Navbar buttons -->           
+         
 <div class="navbar-btn-container">
     <button id="myButton" class="free-trial-btn">Free Trial</button>
     <a id="myLink" href="./login.html"><button id="myButton" class="login-btn">Login</button></a>
@@ -88,13 +86,13 @@
     <div class="first-img">
         <img src="./public/images/k.png" alt="">
     </div>
-    <div class="first-container">
+    <div class="first-container-abt">
         <div class="our-story">
             <h1>Our Story</h1>
             <p>
-                Rabah360 was launched in 2024 as a software company based in the Australia. Our team cares about helping churches and supporting their services through technology. We hope to improve the relationship between churches and members and are continuously working towards finding innovative tools that help servants perform their duties more effectively. <br><br>
-                Today, Rabah360 is helping over ten thousand churches keep track of their members and guests...and so much more.
-            </p>
+                Rabah360 was launched in 2024 as a software company based in the Australia. <br> Our team cares about helping churches and supporting their services through <br> technology. We hope to improve the relationship between churches and <br> members and are continuously working towards finding innovative tools that <br> help servants perform their duties more effectively. <br><br>
+                Today, Rabah360 is helping over ten thousand churches keep track of their <br> members and guests...and so much more.
+            </p>min
         </div>
         <div class="our-mission-value">
             <div class="mission">
@@ -103,12 +101,12 @@
             </div>
             <div class="value">
                 <h1>Our Value</h1>
-                <p>At Rabah360, our Core Values can be summarized by the word EQUIP.</p>
+                <p>At Rabah360, our Core Values can be summarized by the word <br> EQUIP.</p>
                 <div class="value-content">
                     <h1>E</h1>
                     <p>
                        <b> Excellent Service</b><br>
-    We're here to serve God's church and help simplify ministry and administration by providing unrivaled support and resources.
+    We're here to serve God's church and help simplify ministry <br> and administration by providing unrivaled support and <br> resources.
 
                     </p>
                 </div>
@@ -116,7 +114,7 @@
                     <h1>Q</h1>
                     <p>
                        <b>Quality & Passion</b><br>                     
-                       We don't do half-way; mediocre is not in our vocabulary. We are passionate about the local church. We work hard to deliver quality and exceed expectations.
+                       We don't do half-way; mediocre is not in our vocabulary. We<br> are passionate about the local church. We work hard to <br>deliver quality and exceed expectations.
                        
 
                     </p>
@@ -125,64 +123,98 @@
                     <h1>U</h1>
                     <p>
                        <b>User Friendly</b><br>                     
-                       We aim to provide simple, effective solutions for ministry and admin challenges. We seek to be intuitive, helpful, and reliable.
+                       We aim to provide simple, effective solutions for ministry and <br>admin challenges. We seek to be intuitive, helpful, and <br>reliable.
                     </p>
                 </div>               
                 <div class="value-content">
                     <h1>I</h1>
                     <p>
                        <b>Intentionally Affordable</b><br>                     
-                       We could charge more, but we don't need to. We want to be affordable and accessible for ministries of all sizes in all locations.
+                       We could charge more, but we don't need to. We want to be <br>affordable and accessible for ministries of all sizes in all <br>locations.
                     </p>
                 </div>
                 <div class="value-content">
                     <h1>P</h1>
                     <p>
                        <b>Partner in Ministry</b><br>                     
-                       Your mission is our mission. We're not just a software company; we're a resource for ministry and building up the body of Christ.
+                       Your mission is our mission. We're not just a software <br>company; we're a resource for ministry and building up the <br>body of Christ.
                     </p>
                 </div>
             </div>
         </div>
-        <div class="faq">
+        <div class="faq-abt">
             <div class="faq-label">
                 <h1>Faq’s</h1>
             </div>
             <div class="d">
-                <div class="faq-details">
+                <!-- FAQ 1 -->
+                <div class="faq-details" onclick="toggleDetails(this)">
                     <p>What is Rabah360?</p>
                     <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g id="Slider">
-                        <path id="Vector" d="M22.1258 12.3906L16.4018 18.1146L10.6778 12.3906L8.79248 14.276L16.4018 21.8853L24.0111 14.276L22.1258 12.3906Z" fill="black"/>
+                            <path id="Vector" d="M22.1258 12.3906L16.4018 18.1146L10.6778 12.3906L8.79248 14.276L16.4018 21.8853L24.0111 14.276L22.1258 12.3906Z" fill="black" />
                         </g>
-                        </svg>
-                        
+                    </svg>
+            
+                    <!-- The content is inside the same div -->
+                    <div class="details-content" style="display: none;">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae placeat veniam id beatae corporis quos. Aperiam molestiae laudantium, atque exercitationem similique deleniti consectetur quaerat mollitia perferendis deserunt ipsam, eius enim.</p>
+                    </div>
                 </div>
-                <div class="faq-details-sec">
+            
+                <!-- FAQ 2 -->
+                <div class="faq-details-sec" onclick="toggleDetails(this)">
                     <p>Who is it meant for?</p>
                     <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g id="Slider">
-                        <path id="Vector" d="M22.1258 12.3906L16.4018 18.1146L10.6778 12.3906L8.79248 14.276L16.4018 21.8853L24.0111 14.276L22.1258 12.3906Z" fill="black"/>
+                            <path id="Vector" d="M22.1258 12.3906L16.4018 18.1146L10.6778 12.3906L8.79248 14.276L16.4018 21.8853L24.0111 14.276L22.1258 12.3906Z" fill="black" />
                         </g>
-                        </svg>
+                    </svg>
+            
+                    <!-- The content is inside the same div -->
+                    <div class="details-content" style="display: none;">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae placeat veniam id beatae corporis quos. Aperiam molestiae laudantium, atque exercitationem similique deleniti consectetur quaerat mollitia perferendis deserunt ipsam, eius enim.</p>
+                    </div>
                 </div>
-                <div class="faq-details-sec">
-                    <p>Is your platform moderated? If yes, why?</p>
+            
+                <!-- FAQ 3 -->
+                <div class="faq-details-sec" onclick="toggleDetails(this)">
+                    <div>
+                        <p>Is your platform moderated? If yes, why?</p>
+                        <!-- The content is inside the same div -->
+                        <div class="details-content" style="display: none;">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae placeat veniam id beatae corporis quos. Aperiam molestiae laudantium, atque exercitationem similique deleniti consectetur quaerat mollitia perferendis deserunt ipsam, eius enim.</p>
+                        </div>
+                    </div>
                     <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g id="Slider">
-                        <path id="Vector" d="M22.1258 12.3906L16.4018 18.1146L10.6778 12.3906L8.79248 14.276L16.4018 21.8853L24.0111 14.276L22.1258 12.3906Z" fill="black"/>
+                            <path id="Vector" d="M22.1258 12.3906L16.4018 18.1146L10.6778 12.3906L8.79248 14.276L16.4018 21.8853L24.0111 14.276L22.1258 12.3906Z" fill="black" />
                         </g>
-                        </svg>
+                    </svg>
                 </div>
-                <div class="faq-details-third">
-                    <p>Is your platform moderated? If yes, why?</p>
+            
+                <!-- FAQ 4 -->
+                <div class="faq-details-third" onclick="toggleDetails(this)">
+                    <div>
+                       <p>Can I become a merchant within the platform?</p>
+                        <div class="details-content" style="display: none;">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae placeat veniam id beatae corporis quos. Aperiam molestiae laudantium, atque exercitationem similique deleniti consectetur quaerat mollitia perferendis deserunt ipsam, eius enim.</p>
+                    </div> 
+                    </div>
+                    
                     <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g id="Slider">
-                        <path id="Vector" d="M22.1258 12.3906L16.4018 18.1146L10.6778 12.3906L8.79248 14.276L16.4018 21.8853L24.0111 14.276L22.1258 12.3906Z" fill="black"/>
+                            <path id="Vector" d="M22.1258 12.3906L16.4018 18.1146L10.6778 12.3906L8.79248 14.276L16.4018 21.8853L24.0111 14.276L22.1258 12.3906Z" fill="black" />
                         </g>
-                        </svg>
+                    </svg>
+
+                   
                 </div>
-            </div>          
+            </div>
+            
+            
+            
+                     
         </div>
     </div>
     <div class="fifth-groupd-div">
@@ -196,9 +228,9 @@
             <div class="start-div">
                 <p class="flex">Starter</p>
                 <div class="amount"><p>$0 </p><span> 10 days trial</span></div>
-                <div class="start-btn">
-                    <p>Start Trial </p>
-                </div>
+                <button class="start-btn">
+                    Start Trial 
+                </button>
                 <div class="dtls">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g id="vuesax/linear/tick-circle">
@@ -245,11 +277,11 @@
                 </div>
             </div>
             <div class="flex-div">
-                <h1 class="flex">Flex</h1>
-                <p>$ 64.99<span>Per month</span></p>
-                <div class="flex-btn">
-                    <p>Buy Now </p>
-                </div>
+                <h1 class="flex">Flex</h1>                
+                <div class="amount"><p>$64.99</p><span> Per month</span></div>
+                <button class="flex-btn">
+                    Buy Now 
+                </button>
                 <div class="dtls">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g id="vuesax/linear/tick-circle">

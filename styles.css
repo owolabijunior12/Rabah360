@@ -254,11 +254,10 @@ nav ul li a{
 }
 .second-contrainer{
     display: flex;
-    background: #FFF;
+
     padding: 40px 100px;
     flex-direction: column;
     align-items: center;
-    gap: 24px;
     align-self: stretch;
  
 }
@@ -712,7 +711,7 @@ nav ul li a{
     background: var(--White-Main, #FFF);
 }
 .longdiv{
-    width: 100vw;
+    min-width: 100vw;
 }
 
 .giving-div p:nth-child(1){
@@ -857,7 +856,7 @@ nav ul li a{
 }
 .bundlesave{
     display: flex;
-    padding: 8px 24px;
+    padding: 0px 35px;
     justify-content: center;
     align-items: center;
     gap: 8px; 
@@ -901,33 +900,28 @@ nav ul li a{
     background: #F4F4F4;
 }
 
-.start-div .amount{
+ .amount{
     display: flex;
 
     justify-content: center;
     gap: 3px;    
    
-  
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
+    align-items: baseline;
+
 }
-.start-div .amount p{
+ .amount p{
     display: flex;
    
   
-    font-size: 20px;
+    font-size: 30px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
 }
-.start-div .amount span{
+ .amount span{
     display: flex;
     flex-direction: column;
     justify-content: center;
-
-   
   
     font-size: 16px;
     font-style: normal;
@@ -945,15 +939,7 @@ nav ul li a{
     border-radius: 8px;
     background: var(--Brand-Lemon, #D0EF4C);
 }
-.start-btn p{
-   
-  
-    text-align: center;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-}
+
 .dtls{
     display: flex;
     width: 100%;
@@ -981,37 +967,7 @@ nav ul li a{
     border-radius: 16px;
     background: #F4F4F4;
 }
-.flex-div p{
-    flex: 1 0 0;
-   
-  
-    
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-}
-.flex-div p:nth-child(2){
-    display: flex;
-   
-  
-    
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-}
-.flex-div p:nth-child(2) span{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    
-    align-self: stretch; 
-   
-  
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
+
 .flex-btn{
     display: flex;
     height: 50px;
@@ -1023,15 +979,7 @@ nav ul li a{
     border-radius: 8px;
     background: var(--Brand-Lemon, #D0EF4C);
 }
-.flex-btn p{
-   
-  
-    text-align: center;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-}
+
 .dtls{
     display: flex;
     width: 100%;
@@ -1061,16 +1009,16 @@ line-height: normal;
     padding: 80px 120px;
     flex-direction: column;
     align-items: center;
-    gap: 40px;
+    /* gap: 20px; */
     align-self: stretch;
     background: #F4F4F4;
 }
 .sixth-grouped-div .label{
     display: flex;
-    padding: 8px 24px;
+    padding: 0px 35px;
     justify-content: center;
     align-items: center;
-    gap: 8px;
+    /* gap: 8px; */
     border-radius: 40px;
     border: 2px solid var(--Brand-Lemon, #D0EF4C);
     background: var(--Brand-Black, #000);
@@ -1079,8 +1027,8 @@ line-height: normal;
     color: var(--Brand-Lemon, #D0EF4C);
   
     font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
+   font-style: normal;
+     font-weight: 400;
     line-height: normal;
     text-transform: uppercase;
 }

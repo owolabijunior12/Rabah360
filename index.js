@@ -2,7 +2,7 @@ window.onload = function() {
     setTimeout(function() {
       document.getElementById('loader').style.display = 'none'; 
       document.getElementById('main-content').style.display = 'block'; 
-    }, 2000); 
+    }, 1000); 
   };
   
   function showLoader() {
@@ -12,7 +12,19 @@ window.onload = function() {
     }, 2000);
   }
 
-  
+  function toggleDetails(element) {
+    // Get the first '.details-content' within the clicked div
+    const detailsContent = element.querySelector('.details-content');
+
+    // Toggle display
+    if (detailsContent.style.display === "none" || detailsContent.style.display === "") {
+        detailsContent.style.display = "block";
+    } else {
+        detailsContent.style.display = "none";
+    }
+}
+
+
   document.getElementById('myButton').addEventListener('click', function(event) {
     event.preventDefault(); 
     showLoader(); 
@@ -72,7 +84,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
   // Function to apply dark mode to all necessary elements
   function applyDarkModeToElements() {
     const elements = document.querySelectorAll(
-      '.second-container, .third-container, .quickly-div, .start-div, .flex-div, .person, .second-grouped-div, .sixth-grouped-div, .comment-container, .msg-div, .quickly-look-div, .grps-div, .event-div, .giving-div, .help-container div, .help-container div a, .first-container, .our-story, .service-div.form, .fifth-groupd-div, .cs-div, .faq, .first-div-contact, .first-service-container,.forth-grouped-div ,.form,.form input,.form textarea'
+      '.second-container, .third-container, .quickly-div, .start-div, .flex-div, .person, .second-grouped-div, .sixth-grouped-div, .comment-container, .msg-div, .quickly-look-div, .grps-div, .event-div, .giving-div, .help-container div, .help-container div a, .first-container, .our-story, .service-div.form, .fifth-groupd-div, .cs-div, .faq, .first-div-contact, .first-service-container,.longdiv,.forth-grouped-div ,.form,.form input,.form textarea,.first-container-abt'
     );
 
     elements.forEach((el) => {
@@ -83,7 +95,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
   // Function to remove dark mode from elements
   function removeDarkModeFromElements() {
     const elements = document.querySelectorAll(
-      '.second-container, .third-container, .quickly-div, .start-div, .flex-div, .person, .second-grouped-div, .sixth-grouped-div, .comment-container, .msg-div, .quickly-look-div, .grps-div, .event-div, .giving-div, .help-container div, .help-container div a, .first-container, .our-story, .service-div.form, .fifth-groupd-div, .cs-div, .faq, .first-div-contact, .first-service-container,.forth-grouped-div ,.form,.form input,.form textarea'
+      '.second-container, .third-container, .quickly-div, .start-div, .flex-div, .person, .second-grouped-div, .sixth-grouped-div, .comment-container, .msg-div, .quickly-look-div, .longdiv,.grps-div, .event-div, .giving-div, .help-container div, .help-container div a, .first-container, .our-story, .service-div.form, .fifth-groupd-div, .cs-div, .faq, .first-div-contact, .first-service-container,.forth-grouped-div ,.form,.form input,.form textarea,.first-container-abt'
     );
 
     elements.forEach((el) => {
