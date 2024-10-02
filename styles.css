@@ -107,25 +107,26 @@ nav ul li a{
     
     position: relative;
     color: #FFF;
-    padding:70px 40px 70px 40px ;
+    padding:40px ;
     background: url(./public/images/background-image.png);
     align-items: center;
-    justify-content: space-between;
-    /* align-items: flex-end; */
+    justify-content: end ;
+    /* align-items: end; */
     
     min-height: auto;
-    min-width: 75vw;
+    min-width: 100vw;
     gap: 40px;
 }
 .hero-content h1{
     color: var(--White, #FFF);
   
-    font-size: 40px;
+    font-size: 60px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
     align-self: stretch;
 }
+    
 .hero-content p{
     color: var(--White, #FFF);
   
@@ -148,17 +149,16 @@ nav ul li a{
     background: var(--Brand-Lemon, #D0EF4C);
 }
 .hero-content-img{
-    display: flex;
-    gap: 0px; 
-    flex-direction: row;
+    display: flex;;
     width: 50vw; 
+    height: 30%;
     align-items: end;  
-    object-fit: cover;
+    justify-content: end;
 }
 .hero-content-img img{
-    border: none;
-    background: no-repeat;
-    padding: 0px;margin: 0;
+  object-fit: fill;
+  height: auto;
+  width: 100%;
 }
 .hero-active-user{
     display: flex;
