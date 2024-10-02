@@ -6,6 +6,15 @@
     .first-service-container{
         padding: 0px;
     }
+    .auth-nav{
+        display: block;
+    }
+    .help-container{
+        flex-direction: column;
+    }
+.service-div{
+        width: 250px;
+    }
     .brand{
         padding: 40px 20px 40px 20px;
         gap: 24px;
@@ -14,6 +23,9 @@
     }
     .hero-content{
         flex-direction: column;
+    }
+    .our-story{
+        margin: 10px;
     }
     .hero-content-img {
         width: 100vw; 
@@ -147,15 +159,7 @@
         width: auto;
         
     }
-    .help-container div{
-        padding: 10px;
-        gap: 3px;
-        justify-content: center;
-    }
-    .help-container div svg{
-        width: auto;
-        height: auto;  
-    }
+  
     .help{
         padding: 40px 40px;
         justify-content: flex-start;
@@ -355,18 +359,11 @@
     .input button{
         width: 30%;
     }
+    
     .input input{
         width: 70%;
     }
-    .help-container div{
-        padding: 10px;
-        gap: 3px;
-        justify-content: center;
-    }
-    .help-container div svg{
-        width: auto;
-        height: auto;  
-    }
+   
     .help{
         padding: 40px 40px;
         justify-content: flex-start;
@@ -382,9 +379,22 @@
         position: relative;
         padding: 0%;
     }
+    .auth-nav{
+        display: block;
+    }
+    .service-div{
+        width: 250px;
+    }
+    .first-img img{
+        object-fit: fill;
+        width: 80vw;        
+    }
     body{
         padding-top: 0px;
         overflow-x: hidden;
+    }
+    .our-story{
+        margin: 10px;
     }
     .hero-content-img {
         width: 100vw; 
@@ -549,10 +559,19 @@
         min-width: 100vw;
         box-sizing: border-box;
     }
-    
+    .auth-nav{
+        display: block;
+    }
+    .first-img img{
+        object-fit: fill;
+        width: 80vw;        
+    }
     .longdiv-mobile{
         display: inline;
       }
+      .service-div{
+        width: 250px;
+    }
     body{
         padding-top: 0px;
         overflow-x: hidden;
@@ -790,15 +809,7 @@
         width: auto;
         
     }
-    .help-container div{
-        padding: 10px;
-        gap: 3px;
-        justify-content: center;
-    }
-    .help-container div svg{
-        width: auto;
-        height: auto;  
-    }
+   
     .help{
         padding: 40px 40px;
         justify-content: flex-start;
@@ -1014,6 +1025,10 @@
         display: none;
         
     }
+    .first-img img{
+        object-fit: fill;
+        width: 80vw;        
+    }
     .longdiv-mobile{
         display: inline;
      }
@@ -1026,6 +1041,10 @@
     .nav-btn{
         display: none;
         
+    }
+    .first-img img{
+        object-fit: fill;
+        width: 80vw;        
     }
     .menu-icon,.close-icon{
         display: none;

@@ -90,9 +90,9 @@
         <div class="our-story">
             <h1>Our Story</h1>
             <p>
-                Rabah360 was launched in 2024 as a software company based in the Australia. <br> Our team cares about helping churches and supporting their services through <br> technology. We hope to improve the relationship between churches and <br> members and are continuously working towards finding innovative tools that <br> help servants perform their duties more effectively. <br><br>
-                Today, Rabah360 is helping over ten thousand churches keep track of their <br> members and guests...and so much more.
-            </p>min
+                Rabah360 was launched in 2024 as a software company based in the Australia. Our team cares about helping churches and supporting their services through  technology. We hope to improve the relationship between churches and  members and are continuously working towards finding innovative tools that help servants perform their duties more effectively. <br><br>
+                Today, Rabah360 is helping over ten thousand churches keep track of their members and guests...and so much more.
+            </p>
         </div>
         <div class="our-mission-value">
             <div class="mission">
@@ -149,7 +149,13 @@
             <div class="d">
                 <!-- FAQ 1 -->
                 <div class="faq-details" onclick="toggleDetails(this)">
-                    <p>What is Rabah360?</p>
+                    <div>
+                        <p class="me">What is Rabah360?</p>                        
+                        <!-- The content is inside the same div -->
+                        <div class="details-content" style="display: none;">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae placeat veniam id beatae corporis quos. Aperiam molestiae laudantium, atque exercitationem similique deleniti consectetur quaerat mollitia perferendis deserunt ipsam, eius enim.</p>
+                        </div>
+                    </div>
                     <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g id="Slider">
                             <path id="Vector" d="M22.1258 12.3906L16.4018 18.1146L10.6778 12.3906L8.79248 14.276L16.4018 21.8853L24.0111 14.276L22.1258 12.3906Z" fill="black" />
@@ -163,24 +169,27 @@
                 </div>
             
                 <!-- FAQ 2 -->
-                <div class="faq-details-sec" onclick="toggleDetails(this)">
-                    <p>Who is it meant for?</p>
+                <div class="faq-details-sec" onclick="toggleDetails(this)">                  
+                    <div>
+                        <p class="me">Who is it meant for?</p>
+                        <!-- The content is inside the same div -->
+                        <div class="details-content" style="display: none;">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae placeat veniam id beatae corporis quos. Aperiam molestiae laudantium, atque exercitationem similique deleniti consectetur quaerat mollitia perferendis deserunt ipsam, eius enim.</p>
+                        </div>
+                    </div>
                     <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g id="Slider">
                             <path id="Vector" d="M22.1258 12.3906L16.4018 18.1146L10.6778 12.3906L8.79248 14.276L16.4018 21.8853L24.0111 14.276L22.1258 12.3906Z" fill="black" />
                         </g>
                     </svg>
             
-                    <!-- The content is inside the same div -->
-                    <div class="details-content" style="display: none;">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae placeat veniam id beatae corporis quos. Aperiam molestiae laudantium, atque exercitationem similique deleniti consectetur quaerat mollitia perferendis deserunt ipsam, eius enim.</p>
-                    </div>
+                    
                 </div>
             
                 <!-- FAQ 3 -->
                 <div class="faq-details-sec" onclick="toggleDetails(this)">
                     <div>
-                        <p>Is your platform moderated? If yes, why?</p>
+                        <p class="me">Is your platform moderated? If yes, why?</p>
                         <!-- The content is inside the same div -->
                         <div class="details-content" style="display: none;">
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae placeat veniam id beatae corporis quos. Aperiam molestiae laudantium, atque exercitationem similique deleniti consectetur quaerat mollitia perferendis deserunt ipsam, eius enim.</p>
@@ -195,18 +204,20 @@
             
                 <!-- FAQ 4 -->
                 <div class="faq-details-third" onclick="toggleDetails(this)">
+                  
                     <div>
-                       <p>Can I become a merchant within the platform?</p>
+                        <p class="me">Can I become a merchant within the platform?</p>
+                        <!-- The content is inside the same div -->
                         <div class="details-content" style="display: none;">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae placeat veniam id beatae corporis quos. Aperiam molestiae laudantium, atque exercitationem similique deleniti consectetur quaerat mollitia perferendis deserunt ipsam, eius enim.</p>
-                    </div> 
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae placeat veniam id beatae corporis quos. Aperiam molestiae laudantium, atque exercitationem similique deleniti consectetur quaerat mollitia perferendis deserunt ipsam, eius enim.</p>
+                        </div>
                     </div>
-                    
                     <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g id="Slider">
                             <path id="Vector" d="M22.1258 12.3906L16.4018 18.1146L10.6778 12.3906L8.79248 14.276L16.4018 21.8853L24.0111 14.276L22.1258 12.3906Z" fill="black" />
                         </g>
                     </svg>
+                    </div>
 
                    
                 </div>
@@ -219,7 +230,7 @@
     </div>
     <div class="fifth-groupd-div">
         <div class="bundlesave">
-            Bundle & Save
+           Bundle & Save
         </div>
         <p class="everything">
             Everything you need to run your church.
@@ -229,7 +240,7 @@
                 <p class="flex">Starter</p>
                 <div class="amount"><p>$0 </p><span> 10 days trial</span></div>
                 <button class="start-btn">
-                    Start Trial 
+                    <p>Start Trial </p>
                 </button>
                 <div class="dtls">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -277,10 +288,11 @@
                 </div>
             </div>
             <div class="flex-div">
-                <h1 class="flex">Flex</h1>                
-                <div class="amount"><p>$64.99</p><span> Per month</span></div>
+                <h1 class="flex">Flex</h1>
+           
+                <div class="amount"><p>$64.99 </p><span>Per month</span></div>
                 <button class="flex-btn">
-                    Buy Now 
+                    <p>Buy Now </p>
                 </button>
                 <div class="dtls">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -366,7 +378,7 @@
         <div class="label">
             Rebah360 CHMS
         </div>
-        <p >Don’t just take our words, hear from our Users.</p>
+        <p >Don’t just take our words,<br> hear from our Users.</p>
         <div class="people">
             <div class="person">
                 <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -416,10 +428,10 @@
         </div>
     </div>
     <div class="seventh-grouped-div">
-         <button id="myButton" id="prev-btn" class="nav-btn left-btn">❮</button>
+         
         
         <div class="comment-wrapper">
-            <div class="comment-container active" id="comment-1">
+            <div class="comment-container " >
                 <div class="user">
                     <div class="flex-name">
                         <div class="user-img"></div>
@@ -434,7 +446,7 @@
                 </div>
             </div>
             
-            <div class="comment-container" id="comment-2">
+            <div class="comment-container" >
                 <div class="user">
                     <div class="flex-name">
                         <div class="user-img"></div>
@@ -449,7 +461,7 @@
                 </div>
             </div>
             
-            <div class="comment-container" id="comment-3">
+            <div class="comment-container" >
                 <div class="user">
                     <div class="flex-name">
                         <div class="user-img"></div>
@@ -463,9 +475,7 @@
                     </p>
                 </div>
             </div>
-        </div>
-        
-         <button id="myButton" id="next-btn" class="nav-btn right-btn">❯</button>
+        </div>                        
     </div>
     <footer>
         <div class="footer-label">

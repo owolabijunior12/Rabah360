@@ -10,17 +10,36 @@ body{
     align-items: center;
     background: var(--White-Main, #FFF);
 }
-#dark-theme{
-    background: var(--Brand-Black, #000);
-    color: var(--White-Main, #FFF);
+.auth-nav{
+    display: none;
 }
-.container{
+.auth-container{
+    display: flex;
+    /* width: 100vw; */
+    height: 100vh;
+    flex-direction: column;
+    overflow-x: hidden;
+    scrollbar-color: blue;   
+    justify-content: center;
+    align-items: center;
+    background: var(--White-Main, #FFF);
+}
+
+.auth{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* gap: 10px; */
+    margin-top: 100px;
+}
+.container-auth{
     position: relative;
     border-radius: 8px;
     background: var(--Brand-Purple, #7D61F2);
     display: flex;
-    width: 500px;
-    padding: 20px;
+    /* width: 500px; */
+    height: auto;
+    /* padding: 10px; */
     flex-direction: column;
     align-items: center;
 }
@@ -165,14 +184,8 @@ line-height: 20px; /* 142.857% */
     align-self: stretch;
 }
 
-.loader {
-    width: 40px;
-    aspect-ratio: 1;
-    background: #7D61F2;
-    animation: l1 1s infinite;
-  }
-  @keyframes l1 {
-    0%   {transform: perspective(150px) rotateX(  0deg)}
-    100% {transform: perspective(150px) rotateX(180deg)}
+  .authlogo{
+    width: 100px;
+    height: 50px;
   }
   
