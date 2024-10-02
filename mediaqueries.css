@@ -285,22 +285,12 @@
     
     .comment-wrapper {
         position: relative;
-        width: 100%;
+        width: 80%;
+        flex-direction: column;
     }
+  
     
-    .comment-container {
-        display: none;
-        transition: opacity 0.5s ease-in-out;
-        opacity: 0;
-        position: absolute;
-        width: 100%;
-    }
-    
-    .comment-container.active {
-        display: block;
-        opacity: 1;
-        position: relative;
-    }
+
     
     .nav-btn {
         position: absolute;
