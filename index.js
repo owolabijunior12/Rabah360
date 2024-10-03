@@ -9,7 +9,7 @@ window.onload = function() {
     document.getElementById('loader').style.display = 'flex'; 
     setTimeout(function() {
       document.getElementById('loader').style.display = 'none'; 
-    }, 2000);
+    }, 1000);
   }
 
   function toggleDetails(element) {
