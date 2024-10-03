@@ -43,18 +43,35 @@
     justify-content: center;
     gap: 40px;
 }
-.service-div{
+.service-div {
     display: flex;
-    min-width: 450px;
+    width: 100%; /* Make it flexible */
+    max-width: 450px; /* Ensure a maximum width */
     height: auto;
     padding: 24px;
     justify-content: flex-start;
     flex-direction: column;
     align-items: center;
-
     border-radius: 16px;
-
+    box-sizing: border-box; /* Ensure padding is included in width calculation */
 }
+
+/* Media query for smaller devices */
+@media (max-width: 768px) {
+    .service-div {
+        padding: 16px;
+        width: 80%; /* Reduce width on smaller screens */
+    }
+}
+
+/* Media query for extra-small devices */
+@media (max-width: 480px) {
+    .service-div {
+        padding: 12px;
+        width: 80%; /* Full width on very small devices */
+    }
+}
+
 .service-img-div{
     width: 100%;
     align-self: stretch;
