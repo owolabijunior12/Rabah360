@@ -32,17 +32,35 @@ body{
     /* gap: 10px; */
     margin-top: 100px;
 }
-.container-auth{
+.container-auth {
     position: relative;
     border-radius: 8px;
     background: var(--Brand-Purple, #7D61F2);
     display: flex;
-    /* width: 500px; */
+    width: 90%; /* Use percentage for flexibility */
+    max-width: 500px; /* Limit the width for larger screens */
     height: auto;
-    /* padding: 10px; */
+    /* Adding padding for inner content spacing */
     flex-direction: column;
     align-items: center;
+    margin: 0 auto; /* Center the container horizontally */
 }
+
+/* Media query for larger screens */
+@media (min-width: 768px) {
+    .container-auth {
+        width: 80%;
+    }
+}
+
+/* Media query for even larger screens (desktops) */
+@media (min-width: 1024px) {
+    .container-auth {
+        width: 70%;
+        max-width: 600px; /* Increase the maximum width on larger screens */
+    }
+}
+
 h1{
     color: var(--Brand-Black, #000);
     text-align: center;
