@@ -22,7 +22,7 @@ body{
     scrollbar-color: blue;   
     justify-content: center;
     align-items: center;
-    background: var(--White-Main, #FFF);
+    /* background: var(--White-Main, #FFF); */
 }
 
 .auth{
