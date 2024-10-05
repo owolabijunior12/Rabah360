@@ -11,10 +11,7 @@
     <link rel="shortcut icon" href="./public/images/company-logo.png" type="image/x-icon">
     <title>Rabah360</title>
 </head>
-<body >   
-    <div id="loader">
-        <div class="loader"></div> 
-    </div> 
+<body >     
     <div class="main"></div>
     <nav>
         <!-- navbar image -->
@@ -54,21 +51,12 @@
             <li>
                 <a id="myLink" href="./service.html" rel="noopener noreferrer">Services</a>
             </li>
-            <!-- <li>
-                <a id="myLink" href="./pricing.html" rel="noopener noreferrer">Pricing</a>
-            </li> -->
+            <li id="scrollToPricingButton">
+                <a id="myLink"  rel="noopener noreferrer">Pricing</a>
+            </li>
             <li>
                 <a id="myLink" href="./contact.html" rel="noopener noreferrer">Contact</a>
-            </li>
-            <li >
-                <svg onclick="themes()" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M12 19C15.866 19 19 15.866 19 12C19 8.13401 15.866 5 12 5C8.13401 5 5 8.13401 5 12C5 15.866 8.13401 19 12 19Z" fill="#292D32"/>
-                    <path d="M12 22.96C11.45 22.96 11 22.55 11 22V21.92C11 21.37 11.45 20.92 12 20.92C12.55 20.92 13 21.37 13 21.92C13 22.47 12.55 22.96 12 22.96ZM19.14 20.14C18.88 20.14 18.63 20.04 18.43 19.85L18.3 19.72C17.91 19.33 17.91 18.7 18.3 18.31C18.69 17.92 19.32 17.92 19.71 18.31L19.84 18.44C20.23 18.83 20.23 19.46 19.84 19.85C19.65 20.04 19.4 20.14 19.14 20.14ZM4.86 20.14C4.6 20.14 4.35 20.04 4.15 19.85C3.76 19.46 3.76 18.83 4.15 18.44L4.28 18.31C4.67 17.92 5.3 17.92 5.69 18.31C6.08 18.7 6.08 19.33 5.69 19.72L5.56 19.85C5.37 20.04 5.11 20.14 4.86 20.14ZM22 13H21.92C21.37 13 20.92 12.55 20.92 12C20.92 11.45 21.37 11 21.92 11C22.47 11 22.96 11.45 22.96 12C22.96 12.55 22.55 13 22 13ZM2.08 13H2C1.45 13 1 12.55 1 12C1 11.45 1.45 11 2 11C2.55 11 3.04 11.45 3.04 12C3.04 12.55 2.63 13 2.08 13ZM19.01 5.99C18.75 5.99 18.5 5.89 18.3 5.7C17.91 5.31 17.91 4.68 18.3 4.29L18.43 4.16C18.82 3.77 19.45 3.77 19.84 4.16C20.23 4.55 20.23 5.18 19.84 5.57L19.71 5.7C19.52 5.89 19.27 5.99 19.01 5.99ZM4.99 5.99C4.73 5.99 4.48 5.89 4.28 5.7L4.15 5.56C3.76 5.17 3.76 4.54 4.15 4.15C4.54 3.76 5.17 3.76 5.56 4.15L5.69 4.28C6.08 4.67 6.08 5.3 5.69 5.69C5.5 5.89 5.24 5.99 4.99 5.99ZM12 3.04C11.45 3.04 11 2.63 11 2.08V2C11 1.45 11.45 1 12 1C12.55 1 13 1.45 13 2C13 2.55 12.55 3.04 12 3.04Z" fill="#292D32"/>
-                    </svg>
-                    
-                <!-- <img src="./public/images/toogle.png" alt="" onclick="themes()"  class="theme-toggle-btn" id="theme-toggle"> -->
-                <!-- <button  >Switch Theme</button> -->
-            </li>
+            </li>           
         </ul>
     </div>   
 </div>
@@ -81,10 +69,9 @@
     </nav>
     <div class="hero-content">
         <div class="hero-text">
-            <div>
-
+            <div class="hero-text-content">
                 <h1>Simplify Church <br> Operations With Our <br>User-Friendly Software</h1>
-                <p>With built-in features like database management, check-in, and worship <br> service planning, our software is designed to be powerful yet simple. <br>Save time, reduce hassle, and meet your church's objectives with ease.</p>
+                <span class="hero-text-span">With built-in features like database management, check-in, and worship <br> service planning, our software is designed to be powerful yet simple. <br>Save time, reduce hassle, and meet your church's objectives with ease.</span>
                  <button id="myButton" class="free--btn">Start 10-Days Free Trial</button>
             </div>
         </div>      
@@ -111,12 +98,12 @@
         </div>
         <div class="first-grouped-div">
             <div class="quickly-div">
-                <div class="rec-2">
+                <div class="rec">
                     <img src="./public/images/Rectangle 5.png" alt="">
                 </div>
                 <small>People</small>
                 <h1>Quickly Look Up People</h1>
-                <span>Search and find information on people in seconds using the intuitive designs and lightning-fast response time of Rabah360 Church Management™. Store an unlimited amount of information on each person by adding custom fields. View groups of people that match any number of criteria.</span>
+                <span class="qly-lk">Search and find information on people in seconds using the intuitive designs and lightning-fast response time of Rabah360 Church Management™. Store an unlimited amount of information on each person by adding custom fields. View groups of people that match any number of criteria.</span>
                 <p>Learn More <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g id="Arrow up-right">
                     <path id="Icon" d="M7 17L17 7M17 7H7M17 7V17" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -168,13 +155,13 @@
         </div>
         <div class="third-grouped-div">
             <div class="event-div">
-                <div class="rec-2">
+                <div class="rec-3">
                     <img src="./public/images/Rectangle 2.png" alt="">
                 </div>
-                <p>Events</p>
-                <p>Check In Children and Manage Events</p>
-                <p>Schedule events, take event attendance, and print name tags on-the-spot. Generate reports to find out what age groups are attending, where most people are coming from, and more. Receive alerts if families stop coming multiple weeks in a row.</p>
-                <p>Learn More <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <p class="labels">Events</p>
+                <p class="titles">Check In Children and Manage Events</p>
+                <p class="tcnt">Schedule events, take event attendance, and print name tags on-the-spot. Generate reports to find out what age groups are attending, where most people are coming from, and more. Receive alerts if families stop coming multiple weeks in a row.</p>
+                <p class="lm">Learn More <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g id="Arrow up-right">
                     <path id="Icon" d="M7 17L17 7M17 7H7M17 7V17" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     </g>
@@ -182,13 +169,13 @@
                     </p>
             </div>
             <div class="event-div">
-                <div class="rec-2">
+                <div class="rec-3">
                     <img src="./public/images/Rectangle 1.png" alt="">
                 </div>
-                <p>Giving</p>                
-                <p>Make It Easy to Give</p>
-                <p>With Rabah360 Giving, you unlock the full power of Rabah360 CHMS. Make it easy for your church members to give online or through text message. Provide your church admin with tools that simplify reporting and taxes.</p>            
-                <p>Learn More <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <p class="labels">Giving</p>                
+                <p class="titles">Make It Easy to Give</p>
+                <p class="tcnt">With Rabah360 Giving, you unlock the full power of Rabah360 CHMS. Make it easy for your church members to give online or through text message. Provide your church admin with tools that simplify reporting and taxes.</p>            
+                <p class="lm">Learn More <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g id="Arrow up-right">
                     <path id="Icon" d="M7 17L17 7M17 7H7M17 7V17" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     </g>
@@ -230,16 +217,23 @@
                 Built for You
             </div>
             <p>See what makes Rabah360 easy to use
-            </p>
+            </p>        
             <div class="img">
-                <img src="./public/images/Rectangle 2.png" alt="">
+                <video src="your-video-file.mp4" poster="./public/images/Rectangle 4.png" id="video" controls></video>
+                <div class="play-button" id="playButton">
+                   <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M39.9 6.66699C21.5 6.66699 6.56665 21.6003 6.56665 40.0003C6.56665 58.4003 21.5 73.3337 39.9 73.3337C58.3 73.3337 73.2333 58.4003 73.2333 40.0003C73.2333 21.6003 58.3333 6.66699 39.9 6.66699ZM49.9 47.4337L40.2333 53.0003C39.0333 53.7003 37.7 54.0337 36.4 54.0337C35.0666 54.0337 33.7667 53.7003 32.5667 53.0003C30.1667 51.6003 28.7333 49.1337 28.7333 46.3337V35.167C28.7333 32.4003 30.1667 29.9003 32.5667 28.5003C34.9667 27.1003 37.8333 27.1003 40.2666 28.5003L49.9333 34.067C52.3333 35.467 53.7666 37.9337 53.7666 40.7337C53.7666 43.5337 52.3333 46.0337 49.9 47.4337Z" fill="black"/>
+                        </svg>
+                        
+                </div>
             </div>
+            
             <button class="free-trial-btn">
                 Start 10-Days Free Trial
             </button>
-            <p class="ortalk">Or Talk with our Team</p>
+            <p class="ortalk">Or<span style="text-decoration: un;"> Talk with our Team</span></p>
         </div>
-        <div class="fifth-groupd-div">
+        <div class="fifth-groupd-div" id="pricing">
             <div class="bundlesave">
                Bundle & Save
             </div>
@@ -248,139 +242,147 @@
             </p>
             <div class="container-div">
                 <div class="start-div">
-                    <p class="flex">Starter</p>
-                    <div class="amount"><p>$0 </p><span> 10 days trial</span></div>
+                    <div>
+                        <span class="flex">Starter</span>
+                        <p class="amount">$0 <span> 10 days trial</span></p>
+                    </div>
                     <button class="start-btn">
-                        <p>Start Trial </p>
+                        Start Trial
                     </button>
-                    <div class="dtls">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g id="vuesax/linear/tick-circle">
-                            <g id="tick-circle">
-                            <path id="Vector" d="M12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path id="Vector_2" d="M7.75 11.9999L10.58 14.8299L16.25 9.16992" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            </g>
-                            </g>
-                            </svg>
-                            <p>User roles and permissions</p>  
-                    </div>
-                    <div class="dtls">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g id="vuesax/linear/tick-circle">
-                            <g id="tick-circle">
-                            <path id="Vector" d="M12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path id="Vector_2" d="M7.75 11.9999L10.58 14.8299L16.25 9.16992" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            </g>
-                            </g>
-                            </svg>
-                            <p>Member data management</p>  
-                    </div>
-                    <div class="dtls">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g id="vuesax/linear/tick-circle">
-                            <g id="tick-circle">
-                            <path id="Vector" d="M12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path id="Vector_2" d="M7.75 11.9999L10.58 14.8299L16.25 9.16992" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            </g>
-                            </g>
-                            </svg>
-                            <p>Event registration forms</p>  
-                    </div>
-                    <div class="dtls">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g id="vuesax/linear/tick-circle">
-                            <g id="tick-circle">
-                            <path id="Vector" d="M12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path id="Vector_2" d="M7.75 11.9999L10.58 14.8299L16.25 9.16992" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            </g>
-                            </g>
-                            </svg>
-                            <p>Volunteer scheduling and reminders</p>  
+                    <div>
+                        <div class="dtls">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g id="vuesax/linear/tick-circle">
+                                <g id="tick-circle">
+                                <path id="Vector" d="M12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path id="Vector_2" d="M7.75 11.9999L10.58 14.8299L16.25 9.16992" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </g>
+                                </g>
+                                </svg>
+                                <p>User roles and permissions</p>  
+                        </div>
+                        <div class="dtls">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g id="vuesax/linear/tick-circle">
+                                <g id="tick-circle">
+                                <path id="Vector" d="M12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path id="Vector_2" d="M7.75 11.9999L10.58 14.8299L16.25 9.16992" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </g>
+                                </g>
+                                </svg>
+                                <p>Member data management</p>  
+                        </div>
+                        <div class="dtls">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g id="vuesax/linear/tick-circle">
+                                <g id="tick-circle">
+                                <path id="Vector" d="M12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path id="Vector_2" d="M7.75 11.9999L10.58 14.8299L16.25 9.16992" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </g>
+                                </g>
+                                </svg>
+                                <p>Event registration forms</p>  
+                        </div>
+                        <div class="dtls">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g id="vuesax/linear/tick-circle">
+                                <g id="tick-circle">
+                                <path id="Vector" d="M12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path id="Vector_2" d="M7.75 11.9999L10.58 14.8299L16.25 9.16992" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </g>
+                                </g>
+                                </svg>
+                                <p>Volunteer scheduling and reminders</p>  
+                        </div>
                     </div>
                 </div>
-                <div class="flex-div">
-                    <h1 class="flex">Flex</h1>
-               
-                    <div class="amount"><p>$64.99 </p><span>Per month</span></div>
-                    <button class="flex-btn">
-                        <p>Buy Now </p>
+                <div class="start-div">
+                    <div>
+                        <span class="flex">Flex</span>                   
+                        <p class="amount">$64.99 <span>Per month</span></p>
+                    </div>
+                    <button  class="start-btn">
+                        Buy Now 
                     </button>
-                    <div class="dtls">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g id="vuesax/linear/tick-circle">
-                            <g id="tick-circle">
-                            <path id="Vector" d="M12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path id="Vector_2" d="M7.75 11.9999L10.58 14.8299L16.25 9.16992" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            </g>
-                            </g>
-                            </svg>
-                            <p>User roles and permissions</p>  
-                    </div>
-                    <div class="dtls">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g id="vuesax/linear/tick-circle">
-                            <g id="tick-circle">
-                            <path id="Vector" d="M12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path id="Vector_2" d="M7.75 11.9999L10.58 14.8299L16.25 9.16992" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            </g>
-                            </g>
-                            </svg>
-                            <p>Member data management</p>  
-                    </div>
-                    <div class="dtls">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g id="vuesax/linear/tick-circle">
-                            <g id="tick-circle">
-                            <path id="Vector" d="M12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path id="Vector_2" d="M7.75 11.9999L10.58 14.8299L16.25 9.16992" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            </g>
-                            </g>
-                            </svg>
-                            <p>Online and text giving capabilities</p>  
-                    </div>
-                    <div class="dtls">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g id="vuesax/linear/tick-circle">
-                            <g id="tick-circle">
-                            <path id="Vector" d="M12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path id="Vector_2" d="M7.75 11.9999L10.58 14.8299L16.25 9.16992" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            </g>
-                            </g>
-                            </svg>
-                            <p>Event registration forms</p>  
-                    </div>
-                    <div class="dtls">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g id="vuesax/linear/tick-circle">
-                            <g id="tick-circle">
-                            <path id="Vector" d="M12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path id="Vector_2" d="M7.75 11.9999L10.58 14.8299L16.25 9.16992" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            </g>
-                            </g>
-                            </svg>
-                            <p>Volunteer scheduling and reminders</p>  
-                    </div>
-                    <div class="dtls">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g id="vuesax/linear/tick-circle">
-                            <g id="tick-circle">
-                            <path id="Vector" d="M12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path id="Vector_2" d="M7.75 11.9999L10.58 14.8299L16.25 9.16992" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            </g>
-                            </g>
-                            </svg>
-                            <p>Event planning and coordination</p>  
-                    </div>
-                    <div class="dtls">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g id="vuesax/linear/tick-circle">
-                            <g id="tick-circle">
-                            <path id="Vector" d="M12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path id="Vector_2" d="M7.75 11.9999L10.58 14.8299L16.25 9.16992" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            </g>
-                            </g>
-                            </svg>
-                            <p>Building custom church websites</p>  
+                    <div>
+
+                        <div class="dtls">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g id="vuesax/linear/tick-circle">
+                                <g id="tick-circle">
+                                <path id="Vector" d="M12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path id="Vector_2" d="M7.75 11.9999L10.58 14.8299L16.25 9.16992" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </g>
+                                </g>
+                                </svg>
+                                <p>User roles and permissions</p>  
+                        </div>
+                        <div class="dtls">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g id="vuesax/linear/tick-circle">
+                                <g id="tick-circle">
+                                <path id="Vector" d="M12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path id="Vector_2" d="M7.75 11.9999L10.58 14.8299L16.25 9.16992" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </g>
+                                </g>
+                                </svg>
+                                <p>Member data management</p>  
+                        </div>
+                        <div class="dtls">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g id="vuesax/linear/tick-circle">
+                                <g id="tick-circle">
+                                <path id="Vector" d="M12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path id="Vector_2" d="M7.75 11.9999L10.58 14.8299L16.25 9.16992" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </g>
+                                </g>
+                                </svg>
+                                <p>Online and text giving capabilities</p>  
+                        </div>
+                        <div class="dtls">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g id="vuesax/linear/tick-circle">
+                                <g id="tick-circle">
+                                <path id="Vector" d="M12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path id="Vector_2" d="M7.75 11.9999L10.58 14.8299L16.25 9.16992" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </g>
+                                </g>
+                                </svg>
+                                <p>Event registration forms</p>  
+                        </div>
+                        <div class="dtls">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g id="vuesax/linear/tick-circle">
+                                <g id="tick-circle">
+                                <path id="Vector" d="M12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path id="Vector_2" d="M7.75 11.9999L10.58 14.8299L16.25 9.16992" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </g>
+                                </g>
+                                </svg>
+                                <p>Volunteer scheduling and reminders</p>  
+                        </div>
+                        <div class="dtls">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g id="vuesax/linear/tick-circle">
+                                <g id="tick-circle">
+                                <path id="Vector" d="M12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path id="Vector_2" d="M7.75 11.9999L10.58 14.8299L16.25 9.16992" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </g>
+                                </g>
+                                </svg>
+                                <p>Event planning and coordination</p>  
+                        </div>
+                        <div class="dtls">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g id="vuesax/linear/tick-circle">
+                                <g id="tick-circle">
+                                <path id="Vector" d="M12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path id="Vector_2" d="M7.75 11.9999L10.58 14.8299L16.25 9.16992" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </g>
+                                </g>
+                                </svg>
+                                <p>Building custom church websites</p>  
+                        </div>
                     </div>
                 </div>
             </div>

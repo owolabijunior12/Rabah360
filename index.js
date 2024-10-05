@@ -13,16 +13,35 @@ window.onload = function() {
   }
 
   function toggleDetails(element) {
-    // Get the first '.details-content' within the clicked div
+   
     const detailsContent = element.querySelector('.details-content');
 
-    // Toggle display
+   
     if (detailsContent.style.display === "none" || detailsContent.style.display === "") {
         detailsContent.style.display = "block";
     } else {
         detailsContent.style.display = "none";
     }
 }
+document.getElementById('scrollToPricingButton').addEventListener('click', function() {
+  const pricingDiv = document.getElementById('pricing');
+  pricingDiv.scrollIntoView({
+      behavior: 'smooth', // Smooth scrolling
+      block: 'start' // Scroll to the start of the element
+  });
+});
+
+const playButton = document.getElementById('playButton');
+const video = document.getElementById('video');
+
+
+video.controls = false;
+
+playButton.addEventListener('click', () => {
+    playButton.style.display = 'none'; 
+    // video.controls = true; 
+    video.play(); 
+});
 
 
   document.getElementById('myButton').addEventListener('click', function(event) {
@@ -65,7 +84,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
 })
 
 
-  // Function to apply dark mode to all necessary elements
+ 
   function applyDarkModeToElements() {
     const elements = document.querySelectorAll(
       '.second-container, .third-container, .quickly-div, .start-div, .flex-div, .person, .second-grouped-div, .sixth-grouped-div, .comment-container, .msg-div, .quickly-look-div, .grps-div, .event-div, .giving-div, .help-container div, .help-container div a, .first-container, .our-story, .service-div.form, .fifth-groupd-div, .cs-div, .faq, .first-div-contact, .first-service-container,.longdiv,.forth-grouped-div ,.form,.form input,.form textarea,.first-container-abt'
@@ -76,7 +95,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     });
   }
 
-  // Function to remove dark mode from elements
+ 
   function removeDarkModeFromElements() {
     const elements = document.querySelectorAll(
       '.second-container, .third-container, .quickly-div, .start-div, .flex-div, .person, .second-grouped-div, .sixth-grouped-div, .comment-container, .msg-div, .quickly-look-div, .longdiv,.grps-div, .event-div, .giving-div, .help-container div, .help-container div a, .first-container, .our-story, .service-div.form, .fifth-groupd-div, .cs-div, .faq, .first-div-contact, .first-service-container,.forth-grouped-div ,.form,.form input,.form textarea,.first-container-abt'
@@ -88,31 +107,31 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
   }
 
   document.addEventListener('DOMContentLoaded', () => {
-    // Get the theme from localStorage
+   
     const theme = localStorage.getItem('theme') || 'light';
 
-    // Apply dark mode if 'theme' in localStorage is 'dark'
+   
     if (theme === 'dark') {
       document.body.classList.add('dark-mode');
-      applyDarkModeToElements(); // Apply dark mode to all relevant elements
+      applyDarkModeToElements();
     } else {
       document.body.classList.add('light-mode');
     }
   });
 
-  // Function to toggle theme and store preference in localStorage
+ 
   function themes() {
     const body = document.body;
     const currentTheme = localStorage.getItem('theme') || 'light';
 
     if (currentTheme === 'dark') {
       body.classList.remove('dark-mode');
-      localStorage.setItem('theme', 'light'); // Switch to light mode
-      removeDarkModeFromElements(); // Remove dark mode from elements
+      localStorage.setItem('theme', 'light');
+      removeDarkModeFromElements();
     } else {
       body.classList.add('dark-mode');
-      localStorage.setItem('theme', 'dark'); // Switch to dark mode
-      applyDarkModeToElements(); // Apply dark mode to elements
+      localStorage.setItem('theme', 'dark');
+      applyDarkModeToElements();
     }
   }
 
