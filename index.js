@@ -122,7 +122,7 @@ function toggleDarkModeForElements(enableDarkMode) {
       '.sixth-grouped-div, .comment-container, .msg-div, .quickly-look-div, .grps-div, .event-div, .giving-div, ' +
       '.help-container div, .help-container div a, .first-container, .our-story, .service-div.form, ' +
       '.fifth-groupd-div, .cs-div, .faq, .first-div-contact, .first-service-container,.longdiv,.forth-grouped-div, ' +
-      '.form, .form input, .form textarea, .first-container-abt'
+      '.form, .form input, .form textarea,.longdiv-mobile, .first-container-abt'
   );
   
   elements.forEach((el) => {
