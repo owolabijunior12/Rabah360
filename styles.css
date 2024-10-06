@@ -2,7 +2,8 @@
 
 body{
     padding: 0;
-    width: 100vw;
+    min-width: 100vw;
+    max-width: 100vw;
     height: auto;
     margin: 0;   
     font-family: 'Nunito', sans-serif;
@@ -29,6 +30,7 @@ nav {
     background: var(--Brand-Purple, #7D61F2);
     display: flex;
     min-width: 100vw;
+    max-width: 100vw;
     height: 76px;
    
     padding: 8px 40px 8px 40px;
@@ -130,6 +132,8 @@ text-align: center;
     background-size: cover;
     min-height: auto;
     min-width: 100vw;
+    max-width: 100vw;
+    box-sizing: border-box;
     gap: 40px;
 }
 .hero-content h1 {
@@ -760,8 +764,9 @@ opacity: 0px;
     border: 2px solid #F4F5F7;
     background: var(--White-Main, #FFF);
 }
-.longdiv{
+.longdiv,.longdiv-mobile{
     min-width: 100vw;
+    max-width: 100vw;
 }
 
 .giving-div p:nth-child(1){
@@ -857,7 +862,7 @@ opacity: 0px;
 
 .img video {
     width: 100%; /* Keep the original video width */
-    height: auto; /* Keep the original video height */
+    height: 100%; /* Keep the original video height */
     border-radius: 8px;
     object-fit: fill;
     border: 2px solid #E0E0E0;
@@ -1354,7 +1359,7 @@ line-height: 22px;
 text-align: right;
 gap: 8px;
 align-self: stretch;
-border-radius: 7px;
+border-radius:  0px 7px  7px 0px;
 background: var(--Brand-Lemon, #D0EF4C);
 }   
 

@@ -3,6 +3,44 @@
         padding-top: 0px;
         overflow-x: hidden;
     }
+    .hero-text-content h1{
+        font-family: Nunito;
+        font-size: 35px;
+        font-weight: 700;
+        line-height: 47.74px;
+        text-align: left;
+
+    }
+    .hero-text-span{
+        font-family: Nunito;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 24px;
+        text-align: left;
+
+    } 
+    .powerful-div{
+        font-family: Nunito;
+        font-size: 26px;
+        font-weight: 700;
+        line-height: 35.46px;
+        text-align: center;
+
+    }
+    .rec-2{
+        width: 100%;
+    }
+    .rec-2 img{
+        width: 100%;
+    }
+    .free--btn{
+        width: 90%;
+    }
+   .grps-div{
+    width: 100%;
+    padding: 0;
+   }
+
     .first-service-container{
         padding: 0px;
     }
@@ -12,7 +50,7 @@
     .help-container{
         flex-direction: column;
     }
-.service-div{
+    .service-div{
         width: 250px;
     }
     .brand{
@@ -189,16 +227,36 @@
         opacity: 0px;
 
     }
-    .second-grouped-div .grps-div{
-        display: flex;
-        padding: 40px;
-        flex-direction: column;
-        align-items: flex-start;
-        
-        align-self: stretch;
-        border-radius: 16px;
-        /* border: 2px solid #F4F5F7; */
-        background: var(--White-Main, #FFF);
+    .newletter{
+        width: 98%;
+    }
+    .ortalk{
+        font-family: Nunito;
+        font-size: 16px;
+        text-align: center;
+        font-weight: 700;
+        line-height: 21.82px;
+
+
+    }
+    .forth-grouped-div p{
+        font-family: Nunito;
+font-size: 13px;
+font-weight: 700;
+text-align: center;
+
+    }
+    .ortalk span{
+        text-decoration: underline;
+    }
+    .sixth-grouped-div p{
+        width: 100%;
+        font-family: Nunito;
+font-size: 26px;
+font-weight: 700;
+line-height: 35.46px;
+text-align: center;
+
     }
     .grps-div .rec-3{
         width: 100%; 
@@ -295,7 +353,7 @@
         flex-direction: column;
     }
   
-    
+    .longdiv-mobile
 
     
     .nav-btn {
@@ -382,7 +440,12 @@
     .auth-nav{
         display: block;
     }
-    .service-div{
+    .newletter .input{
+        min-width: 90vw;
+        max-width: 90vw;
+    }
+  
+.service-div{
         width: 250px;
     }
     .first-img img{
@@ -411,7 +474,7 @@
         padding-top: 75px;
     }
     
-    .longdiv-mobile{
+      .longdiv-mobile{
         display: inline;
       }
     
@@ -433,7 +496,7 @@
         top: 30px;
         right: 10px;
         cursor: pointer;
-    }
+    } 
     
     
     .mobile-navbar {
@@ -471,7 +534,7 @@
     .mobile-navbar.active ul {
         display: block; 
     }
-    
+
     .mobile-navbar ul li {
         margin-bottom: 16px;
     }
@@ -568,7 +631,7 @@
     }
     .longdiv-mobile{
         display: inline;
-      }
+    }
       .service-div{
         width: 250px;
     }
@@ -593,7 +656,7 @@
         height: 35px;
         width: 35px;
     }
-    
+  
     .close-icon {
         display: none; 
         position: absolute;
@@ -623,7 +686,7 @@
     
     
     .mobile-navbar.active {
-        right: 0; 
+        right: 0;
     }
     #mobile-btn.active {
         right: 0; 
@@ -632,7 +695,7 @@
     .mobile-navbar ul {
         list-style: none;
         padding: 0;
-        display: none; 
+       display: none;
     }
     
     .mobile-navbar.active ul {
@@ -661,21 +724,21 @@
     
     .mobile-navbar.active .navbar-btn-container {
         display: flex; 
-    }
+    } 
     .menu-icon {
         display: block; 
     }
 
     .close-icon {
         display: none; 
-    }
+   }
 
     .mobile-navbar.active ~ .menu-icon {
         display: none; 
     }
 
     .mobile-navbar.active ~ .close-icon {
-        display: block; 
+        display: block;
     }
 
     .mobile-navbar.active ul li a{
@@ -684,14 +747,14 @@
 
     nav ul {
         display: none;        
-    }
-
+      }
+      
     .navbar-btn-container {
         display: none; 
     }
     .first-service-container{
         padding: 1px;
-    }
+      }
     .menu-icon {
         display: block; 
         position: absolute;
@@ -707,7 +770,7 @@
         top: 10px;
         right: 10px;
         cursor: pointer;
-    }
+    } 
     
     .first-service-container{
         padding: 0px;
@@ -743,7 +806,7 @@
     .mobile-navbar.active ul {
         display: block; 
     }
-    
+
     .mobile-navbar ul li {
         margin-bottom: 16px;
     }
@@ -809,7 +872,7 @@
         width: auto;
         
     }
-   
+  
     .help{
         padding: 40px 40px;
         justify-content: flex-start;
@@ -887,9 +950,9 @@
     }
     .second-contrainer{
         padding: 0;
-    }
+    } 
     .quickly-div{
-        display: flex;
+        display: flex;        
         width: 80vw;
         padding: 40px;
         flex-direction: column;
@@ -909,7 +972,7 @@
         flex-shrink: 0;
         background: url(./public/images/Rectangle\ 5.png);
     }
-    .third-container{
+    .third-container{     
         padding: 20px;
     }
     .hero-content{
@@ -956,7 +1019,7 @@
     }
     .sixth-grouped-div .label{
         padding: 8px;
-    
+
     }
     .sixth-grouped-div .label p{
         font-size: 12px;
@@ -1018,6 +1081,37 @@
     }
     .longdiv{
        display: none;
+    }
+    .first-header{
+        font-size: 20px;
+    }
+    .first-img img{
+        object-fit: fill;
+        width: 80vw;        
+    }
+    .our-mission-value{
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+    .first-div-contact{
+        padding: 5px;
+    }
+    .input button{
+        width: 30%;
+    }
+    
+    .input input{
+        width: 70%;
+    }
+   
+    .help{
+        padding: 40px 40px;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    nav {        
+        padding: 0%;
+        width: 100vw;
     }
 }
 @media (min-width: 818px) and (max-width: 991.98px) {
