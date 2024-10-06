@@ -79,7 +79,7 @@ nav ul li a{
     width: 120px;
     height: 46px;
     padding: 8px 16px;
-    font-family: Nunito;
+    
 font-size: 16px;
 font-weight: 600;
 line-height: 21.82px;
@@ -96,7 +96,7 @@ text-align: center;
     display: flex;
     width: 120px;
     height: 46px;
-    font-family: Nunito;
+    
 font-size: 16px;
 font-weight: 600;
 line-height: 21.82px;
@@ -166,7 +166,7 @@ text-align: center;
     display: flex;
     width: 250px;
     height: 55px;
-    font-family: Nunito;
+    
     font-size: 16px;
     font-weight: 700;
     line-height: 21.82px;
@@ -417,7 +417,7 @@ opacity: 0px;
     object-fit: fill;
 }
 .quickly-div small{
-    font-family: Nunito;
+    
     font-size: 14px;
     font-weight: 300;
     line-height: 22px;
@@ -730,7 +730,7 @@ opacity: 0px;
 }
 
 .titles{
-    font-family: Nunito;
+    
     font-size: 30px;
     font-weight: 700;
     line-height: 40.92px;
@@ -740,7 +740,7 @@ opacity: 0px;
 
 
 .tcnt{
-    font-family: Nunito;
+    
     font-size: 16px;
     font-weight: 300;
     line-height: 24px;
@@ -1000,7 +1000,7 @@ opacity: 0px;
     padding: 8px 16px;
     justify-content: center;
     align-items: center;
-    font-family: Nunito;
+    
     font-size: 16px;
     font-weight: 700;
     line-height: 21.82px;
@@ -1065,7 +1065,7 @@ opacity: 0px;
 }
 .flex{
   margin: 0; 
-font-family: Nunito;
+
 font-size: 20px;
 padding: 0;
 font-style: normal;
@@ -1074,7 +1074,6 @@ line-height: normal;
 }
 .sixth-grouped-div{
     display: flex;
-    padding: 80px 120px;
     flex-direction: column;
     align-items: center;   
     align-self: stretch;
@@ -1163,7 +1162,7 @@ line-height: normal;
     background: url(./public/images/Ellipse\ 9.svg) lightgray 50% / cover no-repeat;
 }
 .username{
-
+    margin: 0;
     font-size: 18px;
     font-style: normal;
     font-weight: 700;
@@ -1171,9 +1170,13 @@ line-height: normal;
     letter-spacing: 0.36px;
     align-self: stretch;
 }
-.seventh-grouped-div .comment-container .user .user-img .user-name-container p:nth-child(2){
+.user-name-container{
+    
+    
+}
+.seventh-grouped-div .comment-container .user .user-img .user-name-container span{
     color: #333;
-  
+    margin: 0;
     font-size: 2px;
     font-style: normal;
     font-weight: 400;
@@ -1181,20 +1184,21 @@ line-height: normal;
     align-self: stretch;
 }
 .comment{
-   
-  
+   margin: 0;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
-    line-height: normal;
+    line-height: 19.1px;
     align-self: stretch;
+
+text-align: left;
 }
 .flex-name{
     display: flex;
     width: 100%;
     
     align-items: center;
-    gap: 12px;
+    gap: 16px;
 }
 
 footer{
@@ -1229,14 +1233,14 @@ border: 1px solid #090302;
 }
 .hr{
     width: 100%;
-    height: 2px;
+    height: 0.5px;
     color: #000;
    background-color: #000;
 }
 .copyright{
    
 text-align: center;
-font-family: Nunito;
+
 font-size: 16px;
 font-style: normal;
 font-weight: 400;
@@ -1244,34 +1248,24 @@ line-height: 22px;
 }
 .copyright span{
    
-font-family: Nunito;
+
 font-size: 16px;
 font-style: normal;
 font-weight: 700;
 line-height: 22px;
 }
-.explore p{
+.explore h4 a{
     align-self: stretch;
-   
-  
     font-size: 16px;
     font-style: normal;
-    font-weight: 900;
+    color: #000;
+    font-weight: 400;
     line-height: 22px; 
 }
 a{
     text-decoration: none;
 }
-.explore span{
-    align-self: stretch; 
-   
-  
-    font-size: 16px;
-    font-style: normal;
-    list-style: none;
-    
-    line-height: 22px; 
-}
+
 .contact-us .contact-us-header{
     display: block;
     font-size: 2em;
@@ -1293,6 +1287,9 @@ line-height: 22px;
     gap: 16px;
     padding: 10px;
 }
+.newletter{
+    width: 30%;
+}
 .newsletter h1{
     align-self: stretch;
    
@@ -1305,7 +1302,6 @@ line-height: 22px;
 .newletter p{
     width: 314.667px;
     color: #141414;
-  
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -1321,21 +1317,28 @@ line-height: 22px;
     border: 1px solid var(--Grey, #E0E0E0);
     background: var(--Off-White, #FAFAFA);
 } 
-.newletter .input input{
+.newletter .input input {
     height: 100%;
     width: 70%;
     padding-left: 10px;
     background: var(--Off-White, #FAFAFA);
     color: var(--Color, #090302);
-  
     font-size: 16px;
     font-style: normal;
     flex: 1 0 0;
     font-weight: 400;
-    line-height: 22px; 
-    border: none;
+    line-height: 22px;
+    border: none; 
     border-radius: 7px;
-}   
+    outline: none; 
+}
+
+
+.newletter .input input:focus {
+    outline: none;
+    border: none;
+}
+  
 .newletter .input button{
     height: 100%;
     width: 30%;
@@ -1344,6 +1347,11 @@ line-height: 22px;
 padding: 0px 16px;
 justify-content: center;
 align-items: center;
+font-family: Nunito;
+font-size: 16px;
+font-weight: 700;
+line-height: 22px;
+text-align: right;
 gap: 8px;
 align-self: stretch;
 border-radius: 7px;
