@@ -2,6 +2,7 @@
     body{
         padding-top: 0px;
         overflow-x: hidden;
+
     }
     .hero-text-content h1{
         font-family: Nunito;
@@ -141,7 +142,9 @@ text-align: center;
         font-size: 18px;
     }
     
-    
+    .seventh-grouped-div .comment-container{
+        width: 100%;
+    }
     .mobile-navbar .navbar-btn-container {
         display: none; 
         flex-direction: column;
@@ -462,6 +465,7 @@ text-align: center;
     body{
         padding-top: 0px;
         overflow-x: hidden;
+        
     }
     .our-story{
         margin: 10px;
@@ -628,6 +632,9 @@ text-align: center;
         padding: 0%;
         min-width: 100vw;
         box-sizing: border-box;
+    }
+    .seventh-grouped-div .comment-container{
+        width: 100%;
     }
     .auth-nav{
         display: block;
