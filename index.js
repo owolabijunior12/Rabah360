@@ -5,7 +5,7 @@ window.onload = () => {
   }, 1000);
 };
 
-// Utility functions
+
 function toggleVisibility(elementId, displayStyle) {
   document.getElementById(elementId).style.display = displayStyle;
 }
@@ -22,10 +22,7 @@ function toggleDetails(element) {
   detailsContent.style.display = detailsContent.style.display === "block" ? "none" : "block";
 }
 
-// Event listeners
-document.getElementById('scrollToPricingButton')?.addEventListener('click', () => {
-  scrollToElement('pricing');
-});
+
 
 document.getElementById('playButton')?.addEventListener('click', () => {
   playVideo();
@@ -46,15 +43,29 @@ document.getElementById('loginForm')?.addEventListener('submit', (event) => {
   handleLoginFormSubmission();
 });
 
-// Scroll to element
+
+document.addEventListener('DOMContentLoaded', function () {
+  
+  const scrollButton = document.getElementById('scrollToPricingButton');
+  const pricingSection = document.getElementById('pricing');
+
+  
+  if (scrollButton && pricingSection) {
+    scrollButton.addEventListener('click', () => {
+      scrollToElement('pricing');
+    });
+  }
+});
+
 function scrollToElement(elementId) {
-  document.getElementById(elementId)?.scrollIntoView({
-      behavior: 'smooth',
-      block: 'start'
-  });
+  const element = document.getElementById(elementId);
+  if (element) {
+    element.scrollIntoView({ behavior: 'smooth' });
+  }
 }
 
-// Video controls
+
+
 function playVideo() {
   const video = document.getElementById('video');
   toggleVisibility('playButton', 'none');
@@ -62,7 +73,7 @@ function playVideo() {
   video.play();
 }
 
-// Mobile menu toggle
+
 function toggleMenu() {
   const mobileNavbar = document.getElementById('mobileNavbar');
   const mobileBtn = document.getElementById('mobile-btn');
@@ -75,7 +86,7 @@ function toggleMenu() {
   closeIcon.classList.toggle('hidden');
 }
 
-// Login form handling
+
 function handleLoginFormSubmission() {
   toggleVisibility('loader', 'block');
   document.getElementById('submit-btn').disabled = true;
@@ -85,7 +96,7 @@ function handleLoginFormSubmission() {
   }, 1000);
 }
 
-// Theme management
+
 document.addEventListener('DOMContentLoaded', () => {
   const theme = localStorage.getItem('theme') || 'light';
   if (theme === 'dark') {

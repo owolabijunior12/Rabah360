@@ -15,12 +15,17 @@ body{
     padding-top: 75px;
     background: #FFF;
 }
+li{
+    cursor: pointer;
+}
 .theme-toggle-btn {    
     background-color: transparent;
     cursor: pointer;
     border-radius: 5px;
 }
-
+.help-container div{
+    width: 100%;
+}
 .theme-toggle-btn.dark-mode {
     background-color: white;
     color: black;
@@ -1339,7 +1344,10 @@ line-height: 22px;
     outline: none; 
 }
 
-
+input:focus {
+    outline: none;
+    border: none;
+}
 .newletter .input input:focus {
     outline: none;
     border: none;

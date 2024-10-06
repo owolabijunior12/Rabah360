@@ -14,7 +14,7 @@
         line-height: 47.74px;
         text-align: left;
 
-    }
+    }  
     .hero-text-span{
         font-family: Nunito;
         font-size: 16px;
@@ -60,15 +60,27 @@ text-align: center;
     }
     .help-container{
         flex-direction: column;
+        width: 100vw;
+        padding: 30px 0px;
     }
     .service-div{
         width: 250px;
+    }
+    .help .input input{
+        font-size: 13px;
+    }
+    .first-div-contact{
+        gap: 10px;
     }
     .brand{
         padding: 40px 20px 40px 20px;
         gap: 24px;
         opacity: 0px;
         
+    }
+    .help-container div{
+        width: 80%;
+        padding: 50px 20PX;
     }
     .hero-content{
         flex-direction: column;
@@ -453,6 +465,20 @@ text-align: center;
     .auth-nav{
         display: block;
     }
+    #btns{
+       display: flex; 
+    }
+    #myButton{
+        display: none;
+    }
+    .help h1{
+        font-family: Nunito;
+font-size: 25px;
+font-weight: 700;
+line-height: 40.92px;
+text-align: center;
+
+    }
     .newletter .input{
         min-width: 90vw;
         max-width: 90vw;
@@ -495,6 +521,7 @@ text-align: center;
         margin: 10px;
         width: 70vw;
     }
+    .help-container div
     .our-story p{
         font-family: Nunito;
 font-size: 16px;
