@@ -16,7 +16,7 @@ body{
 .auth-container{
     display: flex;
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     flex-direction: column;
     overflow-x: hidden;
     scrollbar-color: blue;   
@@ -35,6 +35,7 @@ body{
 .container-auth {
     position: relative;
     border-radius: 8px;
+    padding: 20px 0px;
     background: var(--Brand-Purple, #7D61F2);
     display: flex;
     width: 90%; /* Use percentage for flexibility */
@@ -43,6 +44,7 @@ body{
     /* Adding padding for inner content spacing */
     flex-direction: column;
     align-items: center;
+    gap: 24px;
     margin: 0 auto; /* Center the container horizontally */
 }
 
@@ -60,11 +62,19 @@ body{
         max-width: 600px; /* Increase the maximum width on larger screens */
     }
 }
-
+.auth-img{
+    width: 40%;
+    height:40%;
+}
+.auth-img img{
+    width: 100%;
+    height: auto;
+    object-fit: fill;
+}
 h1{
     color: var(--Brand-Black, #000);
     text-align: center;
-  
+    margin: 0;
     font-size: 30px;
     font-style: normal;
     font-weight: 700;
@@ -90,9 +100,10 @@ p span{
 }
 form{
     display: flex;
-    padding: 40px 60px;
+    padding:  0px 40px  60px 40px;
     flex-direction: column;
     align-items: center;    
+    gap: 16px;
     align-self: stretch;
     border-radius: 16px;    
 }
@@ -101,6 +112,7 @@ form{
     flex-direction: column;
     align-items: flex-start;
     gap: 6px;
+    margin-bottom: 10px;
     align-self: stretch;
 }
 .form-container label{
@@ -155,8 +167,9 @@ form{
   }
 .check{
     display: flex;
-    gap: 9px;
+    gap: 9px;    
     justify-content: center;
+    margin-bottom: 10px;
     align-items: center;
 }
 .f{
@@ -184,7 +197,7 @@ font-family: Nunito;
 font-size: 14px;
 font-style: normal;
 font-weight: 400;
-line-height: 20px; /* 142.857% */
+
 }
 .check label span{
     color: var(--Brand-Black, #000);
