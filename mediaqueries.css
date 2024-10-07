@@ -204,16 +204,16 @@ text-align: center;
         padding: 10px;
     }
     .cs-div{
-        padding: 5px;
+        padding:  80px 20px;
         gap: 20px;
     }
     .cs-div form{
-        padding: 10px;
+        padding: 20px ;
     }
     .navbar-btn-container{
         display: none;
     }
-   
+    
  
     .first-div-contact{
         padding: 5px;
@@ -464,6 +464,25 @@ text-align: center;
     }
     .auth-nav{
         display: block;
+    }
+    .cs-div{
+        width: 80%;
+    }
+    .cs-div h1{
+        font-family: Nunito;
+font-size: 30px;
+font-weight: 700;
+line-height: 40.92px;
+text-align: center;
+
+    }
+    .form-container input{
+        font-family: Nunito;
+font-size: 16px;
+font-weight: 400;
+line-height: 22px;
+text-align: left;
+
     }
     #btns{
        display: flex; 

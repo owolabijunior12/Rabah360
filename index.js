@@ -86,6 +86,11 @@ function toggleMenu() {
   closeIcon.classList.toggle('hidden');
 }
 
+document.querySelectorAll('#mobileNavbar li').forEach(link => {
+  link.addEventListener('click', () => {
+    toggleMenu();  
+  });
+});
 
 function handleLoginFormSubmission() {
   toggleVisibility('loader', 'block');

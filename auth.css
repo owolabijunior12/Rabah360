@@ -148,6 +148,11 @@ form{
     align-self: stretch;
     line-height: normal;
 }
+
+
+::-webkit-scrollbar {
+    display: none;
+  }
 .check{
     display: flex;
     gap: 9px;
